@@ -22,16 +22,31 @@ export default function ServicesIndexPage() {
       <Header />
       <main className="w-full pt-20 bg-surface">
         {/* HERO BANNER */}
-        <section className="relative w-full py-16 lg:py-24 bg-[#fff5f5] border-b border-[#f87b7b]/15 overflow-hidden">
-          <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin text-center">
-            <span className="font-label-eyebrow text-label-eyebrow text-[#e11d48] uppercase tracking-widest font-bold">
-              Integrated Capabilities
+        <section className="relative w-full py-16 lg:py-24 bg-[#090d1a] border-b border-white/10 overflow-hidden text-white">
+          {/* Background Photography with Gradient */}
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <Image
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1800&q=80"
+              alt="Step Up Marketing Services Suite"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center opacity-30 brightness-90 contrast-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090d1a] via-[#090d1a]/80 to-[#090d1a]/90" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(244,63,94,0.2),transparent_60%)]" />
+          </div>
+
+          <div className="relative z-10 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin text-center">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f87b7b]/20 text-[#fca5a5] font-label-eyebrow text-[11px] uppercase tracking-wider border border-[#f87b7b]/30 mb-4 font-bold">
+              <span className="w-2 h-2 rounded-full bg-[#f87b7b] animate-pulse" />
+              Integrated Growth Capabilities
             </span>
-            <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tight mt-2 max-w-3xl mx-auto">
+            <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mt-2 max-w-3xl mx-auto">
               Specialized Services Built To Outperform.
             </h1>
-            <p className="font-body-lead text-lg sm:text-xl text-on-surface-variant max-w-2xl mx-auto mt-4">
-              We reject fragmented agency models. Explore our specialized growth practices calibrated to scale enterprise pipelines.
+            <p className="font-body-lead text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto mt-4">
+              We reject fragmented agency models. Explore our specialized digital growth practices calibrated to scale enterprise pipelines.
             </p>
           </div>
         </section>

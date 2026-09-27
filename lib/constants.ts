@@ -28,8 +28,9 @@ export const BRAND = {
   region: "Ontario",
   country: "Canada",
   postalCode: "L5B 0B9",
-  headerLogo: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZl4ueRmXa1VjKmFxSd_HUQrVStR5pvXhvu-n183S2aN0UdC_c3qCvCobVLrbAM2osiUmmHaI4K3zmG-9xuB72kCmIO7DpIEmJuLZwjE2c_BZKjF87KL7D1em_1xHtQhNVmoGUqADd4vKN3Kv4IgqxN5uxQt3_a3v1nRJo9uYqSYGCQJGnlUscoo253e8k_fYWFTJcdrFzD-1zrmXHES-fCofCmU5wS55LjXjNSYwf3TZA1jd79fzgv41JRWrCsaJtfA",
-  footerLogo: "https://lh3.googleusercontent.com/aida-public/AB6AXuCw0UZWi4zo2AE-4fhGqym_jruCaz1jHrjOI29Q98HTmd9_s7nZxHWhMmh4XpCC1ywLORrWseQ0W1xJOctU2Wm3noZkG_KC-5zKSqwruv4l_di37sVIH_8y6MOvUQjbXaJxPpwG7iN7Skw94E_2HL6uk7Sm5WaDnFLeEzMONDnJpmFVIbayW7qVPeeG_6byOqhJF5jrRHXfjaXdP8kO38xrOz_TYZI1mAhbJyMqqXf9QIiR_bvQZk5qSFZuqo-XCu0DbA",
+  googleMapsUrl: "https://share.google/2NcmIlrPIZ9J8qHBR",
+  headerLogo: "/logo.png",
+  footerLogo: "/logo.png",
 };
 
 export const HERO_TRUST_ITEMS = [

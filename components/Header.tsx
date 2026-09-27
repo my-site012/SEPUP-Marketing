@@ -14,18 +14,18 @@ export default function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
         <div className="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter">
           {/* Logo & Brand Name */}
-          <Link href="/" className="flex items-center gap-space-sm shrink-0" aria-label="Step Up Marketing Home">
-            <div className="relative h-11 w-11 shrink-0">
+          <Link href="/" className="flex items-center gap-3 shrink-0 group" aria-label="Step Up Marketing Home">
+            <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0 transition-transform duration-200 group-hover:scale-105">
               <Image
                 src={BRAND.headerLogo}
-                alt="Step Up Marketing logo mark"
+                alt="Step Up Marketing logo"
                 fill
-                sizes="44px"
+                sizes="(max-width: 640px) 56px, 64px"
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold hidden sm:inline-block">
+            <span className="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold hidden sm:inline-block group-hover:text-[#f87b7b] transition-colors">
               Step Up <span className="text-[#f87b7b]">Marketing</span>
             </span>
           </Link>

@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg pb-space-xl">
           {/* Brand Info & Socials */}
           <div className="lg:col-span-4 flex flex-col items-start gap-space-sm">
-            <Link href="/" className="flex items-center gap-space-xs" aria-label="Step Up Marketing Home">
-              <div className="relative h-10 w-10 shrink-0">
+            <Link href="/" className="flex items-center gap-3" aria-label="Step Up Marketing Home">
+              <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0">
                 <Image
                   src={BRAND.footerLogo}
                   alt="Step Up Marketing Logo"
                   fill
-                  sizes="40px"
+                  sizes="64px"
                   className="object-contain"
                 />
               </div>

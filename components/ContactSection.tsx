@@ -106,6 +106,38 @@ export default function ContactSection() {
                   </p>
                 </div>
               </div>
+
+              {/* Google Map Card */}
+              <div className="rounded-2xl overflow-hidden border border-[#f87b7b]/20 shadow-md bg-white">
+                <div className="p-3.5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[20px] text-[#e11d48]">location_on</span>
+                    <span className="font-label-md text-xs font-bold text-on-surface">Mississauga Headquarters</span>
+                  </div>
+                  <a
+                    href={BRAND.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-[#e11d48] hover:bg-[#ffe4e6] transition-colors shadow-sm"
+                  >
+                    <span>View on Google Maps</span>
+                    <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                  </a>
+                </div>
+                <div className="relative w-full h-[220px]">
+                  <iframe
+                    title="Step Up Marketing Office Location"
+                    src="https://maps.google.com/maps?q=3504+Hurontario+St+%233008,+Mississauga,+ON+L5B+0B9,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Global Hubs Summary */}
