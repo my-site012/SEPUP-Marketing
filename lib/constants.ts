@@ -543,7 +543,7 @@ export const FOOTER_SECTIONS = {
     { label: "Legal Services", href: "/#industries" },
   ],
   resources: [
-    { label: "Growth Index 2025", href: "/#portfolio" },
+    { label: "Growth Index 2026", href: "/#portfolio" },
     { label: "GEO Playbook", href: "/services/seo" },
     { label: "Core Web Vitals", href: "/services/web-design-development" },
     { label: "WhatsApp Direct", href: "https://wa.me/14168735556" },

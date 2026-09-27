@@ -181,7 +181,7 @@ export default function Footer() {
         {/* Bottom Legal Bar */}
         <div className="pt-space-md border-t border-[#f87b7b]/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
           <p className="font-body-sm text-body-sm text-on-surface-variant">
-            © 2025 Step Up Marketing Partners Inc. All rights reserved.
+            © 2026 Step Up Marketing Partners Inc. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-space-sm">
             <Link className="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">

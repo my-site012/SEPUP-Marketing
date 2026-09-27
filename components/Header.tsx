@@ -50,36 +50,13 @@ export default function Header() {
 
           {/* Right Action Cluster */}
           <div className="flex items-center gap-space-sm shrink-0">
-            {/* Phone link */}
-            <a
-              href={`tel:${BRAND.phoneTel}`}
-              className="hidden md:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-              aria-label={`Call us at ${BRAND.phoneDisplay}`}
-            >
-              <span className="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">
-                call
-              </span>
-              <span>{BRAND.phoneDisplay}</span>
-            </a>
-
             {/* CTA Button */}
             <a
               href="#contact"
-              className="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg px-6 py-2.5 shadow-md hover:shadow-lg transition-all"
+              className="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg px-6 py-2.5 shadow-md hover:shadow-lg transition-all font-bold"
             >
               Get Free Consultation
             </a>
-
-            {/* Profile Avatar Pill */}
-            <div
-              className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#f87b7b] to-[#4ecdc4] flex items-center justify-center shrink-0 shadow-sm"
-              aria-label="User portal"
-              role="img"
-            >
-              <span className="material-symbols-outlined text-white text-[18px]" aria-hidden="true">
-                person
-              </span>
-            </div>
 
             {/* Hamburger Button for Mobile/Tablet */}
             <button
