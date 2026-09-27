@@ -19,25 +19,20 @@ function highlightKeywords(text: string, keywords: string[]) {
   if (!text) return null;
   if (!keywords || keywords.length === 0) return text;
 
-  const phrases: string[] = [];
-  keywords.forEach((kw) => {
-    phrases.push(kw);
-    const words = kw
-      .split(" ")
-      .filter((w) => w.length > 3 && !["with", "from", "into", "your", "that", "this", "over"].includes(w.toLowerCase()));
-    phrases.push(...words);
-  });
-
-  const uniquePhrases = Array.from(new Set(phrases))
+  const sortedKeywords = [...keywords]
     .filter(Boolean)
     .sort((a, b) => b.length - a.length);
 
-  const escaped = uniquePhrases.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-  const regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+  const escaped = sortedKeywords
+    .map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .join("|");
+  const regex = new RegExp(`(${escaped})`, "gi");
 
   const parts = text.split(regex);
   return parts.map((part, index) => {
-    const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
+    const isKeyword = sortedKeywords.some(
+      (kw) => kw.toLowerCase() === part.toLowerCase()
+    );
     if (isKeyword) {
       return (
         <strong key={index} className="font-bold text-white">
@@ -53,25 +48,20 @@ function highlightKeywordsDark(text: string, keywords: string[]) {
   if (!text) return null;
   if (!keywords || keywords.length === 0) return text;
 
-  const phrases: string[] = [];
-  keywords.forEach((kw) => {
-    phrases.push(kw);
-    const words = kw
-      .split(" ")
-      .filter((w) => w.length > 3 && !["with", "from", "into", "your", "that", "this", "over"].includes(w.toLowerCase()));
-    phrases.push(...words);
-  });
-
-  const uniquePhrases = Array.from(new Set(phrases))
+  const sortedKeywords = [...keywords]
     .filter(Boolean)
     .sort((a, b) => b.length - a.length);
 
-  const escaped = uniquePhrases.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-  const regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+  const escaped = sortedKeywords
+    .map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .join("|");
+  const regex = new RegExp(`(${escaped})`, "gi");
 
   const parts = text.split(regex);
   return parts.map((part, index) => {
-    const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
+    const isKeyword = sortedKeywords.some(
+      (kw) => kw.toLowerCase() === part.toLowerCase()
+    );
     if (isKeyword) {
       return (
         <strong key={index} className="font-bold text-on-surface">
@@ -227,28 +217,10 @@ export default function ServicePage({ params }: ServicePageProps) {
                   {service.title}
                 </h1>
 
-                {/* Tagline / Subtitle with Bold High-Intent Commercial Keywords */}
-                <p className="font-body-lead text-lg sm:text-xl text-slate-100 max-w-2xl leading-relaxed mb-6 font-normal">
-                  {highlightKeywords(`${service.tagline} ${service.description}`, service.keywords)}
+                {/* Hero Description with Primary Target Keyword (Bolded naturally, no stuffing) */}
+                <p className="font-body-lead text-lg sm:text-xl text-slate-100 max-w-2xl leading-relaxed mb-8 font-normal">
+                  {highlightKeywords(service.description, service.keywords)}
                 </p>
-
-                {/* Target Commercial SEO Keywords Badges (Only Bold, Clean Style) */}
-                <div className="mb-8 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 max-w-2xl w-full">
-                  <div className="flex items-center gap-2 mb-2.5 text-slate-200 font-label-md text-xs uppercase tracking-wider font-bold">
-                    <span className="material-symbols-outlined text-[16px] text-white">key</span>
-                    <span>Core Target Commercial Keywords:</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {service.keywords.map((kw, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3.5 py-1.5 rounded-full bg-slate-900/80 text-white border border-white/20 text-xs sm:text-[13px] font-bold shadow-sm"
-                      >
-                        <strong>{kw}</strong>
-                      </span>
-                    ))}
-                  </div>
-                </div>
 
                 {/* Quick Meta Stats Badges */}
                 <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 mb-8">

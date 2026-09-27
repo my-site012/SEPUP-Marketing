@@ -43,20 +43,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "seo",
     title: "SEO Services Agency & Organic Traffic Growth Solutions",
-    h2Heading: "Complete On-Page SEO Optimization & Local SEO Services",
+    h2Heading: "Targeted Local SEO Services & High-Impact Search Rankings",
     bulletPoints: [
-          "Meticulous on-page SEO optimization optimizing metadata, header tags, keyword placement, and internal link structure.",
-          "Technical crawl error resolution, site speed enhancements, mobile usability fixes, and clean XML sitemap management.",
-          "Targeted local SEO services to capture local buyer searches and dominate localized Google search results.",
-          "Sustainable white-hat link acquisition and topical authority building designed for compounding organic traffic growth."
+      "Targeted local SEO services designed to capture high-intent regional buyer searches and dominate Google Local results.",
+      "Sustainable white-hat link acquisition and topical authority building designed for compounding organic traffic growth.",
+      "Meticulous technical audits, crawl budget optimization, and structured schema markup ensuring rapid indexing.",
+      "Transparent monthly keyword telemetry and closed-loop CRM attribution reporting showing real revenue generated from search."
     ],
     shortTitle: "Search Engine Optimization (SEO)",
     badge: "Organic Authority & GEO",
     tagline: "Dominate Google search results and generative AI answer engines like SearchGPT and Perplexity.",
-    description: "Achieve sustainable, compounding visibility on search engines without ongoing ad spend. As a results-driven SEO services agency, we deliver exhaustive on-page SEO optimization, technical site enhancements, and authoritative local SEO services engineered to generate predictable organic traffic growth and high-value customer inquiries.",
+    description: "Achieve long-term search visibility and capture qualified prospective clients. As a dedicated SEO services agency, Step Up Marketing builds custom search architectures that deliver real commercial pipeline.",
     longDescription: [
-      "Our SEO and Generative Engine Optimization (GEO) programs go far beyond basic meta tags. We conduct exhaustive technical audits, architectural restructuring, programmatic topic cluster builds, and brand authority campaigns to position your business as the definitive answer for search engines and generative AI models.",
-      "By calibrating your digital assets for Google's Helpful Content System, core web vitals, and entity-based knowledge graphs, we guarantee compounding search visibility that yields predictable, qualified commercial pipeline month after month."
+      "Modern search engines prioritize authoritative content and flawless user experience over simple keyword frequency. Through comprehensive on-page SEO optimization, our technical team fixes crawl inefficiencies, refines schema metadata, and aligns site structure with intent-rich buyer queries.",
+      "We combine technical foundation audits with high-authority digital PR and topical clusters to position your business as the definitive leader across traditional search engines and generative AI answer engines."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $1,500/mo",
@@ -151,20 +151,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "web-design-development",
     title: "Website Design Company & Custom Web Development",
-    h2Heading: "Modern Responsive Website Design & UI/UX Web Design Services",
+    h2Heading: "Responsive Website Design & Conversion-Focused UI/UX Web Design Services",
     bulletPoints: [
-          "Sub-second loading Next.js and React architectures engineered to pass Google Core Web Vitals with flying colors.",
-          "Seamless responsive website design providing intuitive navigation across smartphones, tablets, and desktops.",
-          "High-converting user journeys and clean UI layouts created by our UI/UX web design services specialists.",
-          "Built-in on-page SEO foundations, schema markup, and frictionless inquiry forms ready to generate business from day one."
+      "Mobile-first, lightning-fast responsive website design that delivers a seamless browsing experience across all smartphones, tablets, and desktops.",
+      "User-centric UI/UX web design services that guide visitors smoothly through high-converting inquiry funnels and booking forms.",
+      "Sub-second load times engineered with clean semantic code, edge caching, and optimized media assets.",
+      "Built-in technical SEO foundations, schema markup, and an intuitive CMS allowing your team to update content effortlessly."
     ],
     shortTitle: "Web Design & Development",
     badge: "Sub-Second Engineering",
     tagline: "High-performance websites engineered with Next.js, React, and modern conversion architectures.",
-    description: "Your website is your company's most vital revenue engine. As an experienced website design company, Step Up Marketing specializes in custom web development and high-converting responsive website design. Our user-centric UI/UX web design services combine sub-second loading speeds with frictionless lead funnels that turn visitors into long-term clients.",
+    description: "Turn your digital presence into a 24/7 revenue engine. As an award-winning website design company, Step Up Marketing creates modern, sub-second loading web solutions tailored to help small and medium businesses scale.",
     longDescription: [
-      "Your website is your company's most critical revenue asset. Slow loading times, generic templates, and clunky user journeys leak pipeline every single second. At Step Up Marketing, we design bespoke digital experiences with ultra-modern UI/UX aesthetics, responsive layouts, and clean headless architectures.",
-      "From mobile-first speed optimization to integrated CRM hooks and frictionless quotation funnels, every build is crafted to convert high-ticket visitors into eager sales inquiries."
+      "Your website is your company's most vital commercial touchpoint. Through modern custom web development, our engineering team builds bespoke web applications on Next.js and React that eliminate user friction and maximize lead capture.",
+      "From sub-second Core Web Vitals to integrated CRM booking workflows, every website we build is crafted to transform casual traffic into high-value sales conversations."
     ],
     rating: "4.95 / 5.0",
     startingPrice: "Starting from $2,500",
@@ -255,20 +255,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "google-ads",
     title: "Google Ads Agency & Search Ads Marketing PPC Management",
-    h2Heading: "Data-Driven Search Ads Marketing & Google Ads Optimization",
+    h2Heading: "Continuous Google Ads Optimization & High-Intent Campaign Scaling",
     bulletPoints: [
-          "Granular keyword curation targeting high commercial intent queries while actively excluding wasteful negative keywords.",
-          "Compelling responsive search ads and ad extensions crafted to maximize CTR and Quality Score.",
-          "Advanced conversion tracking with Google Tag Manager and GA4 for real-time lead and sales measurement.",
-          "Continuous bid adjustments and smart bidding strategies overseen by a certified Google Ads agency."
+      "Daily Google Ads optimization and smart bidding calibration to decrease cost-per-click and maximize return on ad spend.",
+      "High-intent search ads marketing architectures that capture bottom-funnel customers ready to make an immediate purchasing decision.",
+      "Advanced conversion tracking and Google Tag Manager setups for complete visibility into lead and revenue metrics.",
+      "Transparent weekly reporting with clear attribution data highlighting cost-per-acquisition and pipeline value."
     ],
     shortTitle: "Google Ads",
     badge: "High-Intent Acquisition",
     tagline: "High-converting search ads, remarketing funnels, and precision target-CPA campaigns that capture buyer intent.",
-    description: "Stop wasting your marketing budget on unqualified clicks. As a certified Google Ads agency, Step Up Marketing provides meticulous PPC campaign management and continuous Google Ads optimization. We build granular search ads marketing funnels that connect your offerings with high-intent commercial buyers actively seeking your solutions.",
+    description: "Connect with ready-to-buy commercial customers actively searching for your services with a certified Google Ads agency focused on bottom-line profitability.",
     longDescription: [
-      "Pay-Per-Click advertising only works when every single dollar is tied to qualified pipeline economics. At Step Up Marketing, our Google Certified Premier Partner team eliminates wasteful broad match spend, constructs tightly themed ad groups, writes persuasive ad copy, and matches campaigns with dedicated conversion landing pages.",
-      "With real-time bid adjustments, negative keyword hygiene, and multi-touch CRM attribution, we consistently lower client acquisition costs while driving deal velocity."
+      "Wasting advertising budget on irrelevant clicks is the most common pitfall in search advertising. Through disciplined PPC campaign management, Step Up Marketing structures tightly themed ad groups, crafts compelling direct-response copy, and pairs every ad with high-converting landing pages.",
+      "We maintain continuous negative keyword scrubbing and monitor CRM attribution so you only invest capital into search queries that convert into high-margin clients."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $1,200/mo management",
@@ -359,20 +359,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "social-media-management",
     title: "Social Media Management Services for Growing Businesses",
-    h2Heading: "Why Choose Our Social Media Handling Agency",
+    h2Heading: "Strategic Content Calendar Management & Audience Retention",
     bulletPoints: [
-          "Strategic content calendar management with structured weekly scheduling across Instagram, LinkedIn, and Facebook.",
-          "High-quality visual creatives, trending reels, and engaging copywriting crafted for your local target audience.",
-          "Dedicated community engagement and active direct message handling to nurture prospects into qualified leads.",
-          "Monthly performance analytics tracking audience reach, engagement velocity, and measurable social media growth services."
+      "Strategic monthly content calendar management aligned with your promotional launches, holiday campaigns, and product announcements.",
+      "Proven social media growth services leveraging trending short-form video reels, carousels, and proactive community engagement.",
+      "Daily audience moderation and direct message response protocols ensuring zero prospective customer inquiries go unanswered.",
+      "Comprehensive monthly performance telemetry tracking real business outcomes, follower growth velocity, and lead attribution."
     ],
     shortTitle: "Social Media Management",
     badge: "Organic Reach & Engagement",
     tagline: "Build a loyal community and predictable inbound pipeline across Instagram, LinkedIn, and Facebook.",
-    description: "Step Up Marketing delivers comprehensive social media management services designed to turn everyday followers into paying customers. As a dedicated social media handling agency, our team handles strategic content calendar management, visual storytelling, and audience engagement to deliver dependable social media growth services for small and medium businesses.",
+    description: "Build an engaged digital audience and turn followers into paying customers with social media management services engineered for ambitious businesses.",
     longDescription: [
-      "In a crowded digital marketplace, irregular posting and generic stock graphics damage your credibility. Step Up Marketing manages your entire social ecosystem with bespoke visual assets, thought-leadership ghostwriting, community moderation, and strategic cross-channel distribution.",
-      "We focus on executive presence and business outcomes: driving direct website traffic, establishing category authority, and keeping your company top-of-mind with prospects."
+      "In an overcrowded digital landscape, sporadic posting and generic graphics dilute your brand authority. As a dedicated social media handling agency, Step Up Marketing takes full ownership of your channel presence with bespoke visual assets, executive thought leadership, and active community engagement.",
+      "We focus on real business outcomes: driving direct website traffic, establishing category authority, and keeping your company top-of-mind with prospective clients."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $1,200/mo",
@@ -463,20 +463,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "social-media-advertising",
     title: "Paid Social Media Marketing & High-ROI Ad Campaigns",
-    h2Heading: "High-Converting Facebook Ads Agency & Instagram Ad Campaigns",
+    h2Heading: "High-Converting Instagram Ad Campaigns & Precision Targeting",
     bulletPoints: [
-          "Laser-focused social media ad targeting leveraging custom audiences, lookalike modeling, and consumer buying behaviors.",
-          "High-impact ad creatives, video hooks, and dynamic product catalogs developed by a proven Facebook ads agency.",
-          "Multi-platform campaign execution across Meta, Instagram, and LinkedIn with continuous split testing to minimize CPA.",
-          "Server-side conversion API tracking and transparent reporting ensuring closed-loop revenue attribution."
+      "High-converting Instagram ad campaigns designed specifically to stop the scroll and drive instant user action.",
+      "Laser-precision social media ad targeting utilizing custom audiences, lookalike modeling, and pixel behavioral triggers.",
+      "Full-funnel customer acquisition architectures connecting top-of-funnel discovery to high-margin retargeting flows.",
+      "Real-time budget pacing and conversion rate optimization that consistently lowers your cost-per-acquisition."
     ],
     shortTitle: "Social Media Advertising",
     badge: "High-ROI Paid Funnels",
     tagline: "Turn ad spend into measurable revenue with precision audience targeting and high-converting creative hooks.",
-    description: "Maximize your advertising ROI with Step Up Marketing, a performance-focused Facebook ads agency serving ambitious SMBs. We launch high-converting Instagram ad campaigns and end-to-end paid social media marketing architectures calibrated with precision social media ad targeting to capture high-intent buyers and drive predictable revenue.",
+    description: "Generate predictable customer acquisition and scale your revenue with a results-obsessed Facebook ads agency dedicated to high-return advertising funnels.",
     longDescription: [
-      "Organic reach alone is not enough to hit aggressive enterprise revenue targets. Our paid social specialists build full-funnel paid advertising systems that target prospects by job title, industry, behavioral interests, and purchase intent.",
-      "From UGC-style video ads and carousel creatives to advanced Meta Pixel / Conversions API (CAPI) setups, we ensure every advertising dollar yields transparent, measurable revenue."
+      "Organic reach alone is rarely enough to hit aggressive commercial growth targets. Our approach to paid social media marketing combines rigorous financial modeling, rapid creative iteration, and multi-stage remarketing to turn cold audiences into loyal customers.",
+      "From UGC-style video ads and carousel creatives to advanced Meta Pixel and Conversions API (CAPI) setups, we ensure every advertising dollar yields transparent, measurable revenue."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $1,500/mo management",
@@ -567,20 +567,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "graphic-designing",
     title: "Professional Graphic Design Services & Visual Branding",
-    h2Heading: "Premier Logo Design Agency & Creative Design Company",
+    h2Heading: "Premier Logo Design Agency & Complete Brand Systems",
     bulletPoints: [
-          "Bespoke logo creation and visual identity guidelines designed by an experienced logo design agency.",
-          "Comprehensive marketing collateral including business cards, brochures, presentation decks, and print-ready files.",
-          "Attention-grabbing digital banners and high-converting ad graphics crafted by a dedicated creative design company.",
-          "Full commercial asset ownership with vector source files delivered for web, social, and print applications."
+      "Memorable visual identities and vector brand marks developed by our experienced logo design agency.",
+      "Cohesive brand graphics design across pitch decks, digital advertising banners, packaging, and marketing collateral.",
+      "Comprehensive typography, color palette, and asset guidelines for seamless multi-platform brand consistency.",
+      "Full commercial usage rights and high-resolution master vector files delivered ready for web and print applications."
     ],
     shortTitle: "Graphic Designing",
     badge: "Bespoke Brand Visuals",
     tagline: "Captivate prospects with cohesive visual brand collateral, packaging, and commercial design assets.",
-    description: "Make a lasting first impression with professional graphic design services from Step Up Marketing. As a full-service logo design agency and creative design company, we craft bespoke visual assets, marketing collateral, and premium brand graphics design that elevate your brand perception and outperform competitors.",
+    description: "Command immediate attention and build instant brand credibility with bespoke graphic design services crafted for modern, growing businesses.",
     longDescription: [
-      "Your visual identity directly signals the perceived value of your products and services. Inconsistent graphics, poor typography, and amateur layouts repel high-paying clients before they ever hear your pitch.",
-      "Step Up Marketing's creative studio provides end-to-end graphic design solutions: from brand identity overhauls and digital marketing banners to premium print brochures, packaging, and presentation decks that leave a lasting impression."
+      "Your visual identity directly signals the perceived value of your products and services. As an innovative creative design company, Step Up Marketing delivers visually captivating assets that communicate authority, clarify complex value propositions, and inspire immediate action across digital and print channels.",
+      "Whether launching a new brand or elevating established collateral, our design studio produces production-ready creative assets tailored to your exact industry standards and commercial goals."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $800 / project or monthly retainer",
@@ -671,20 +671,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "google-business-management",
     title: "Google My Business Optimization & Local Maps Ranking",
-    h2Heading: "Complete GMB Profile Management & Local Listing Services",
+    h2Heading: "Dominate Google Maps Ranking & Local Search Visibility",
     bulletPoints: [
-          "Exhaustive Google My Business optimization covering verified categories, accurate NAP citations, and geo-tagged images.",
-          "Active GMB profile management with weekly Google Posts, promotional offers, and customer Q&A management.",
-          "Local citation syndication across major directories to elevate your organic Google Maps ranking.",
-          "Automated review generation workflows and professional review responses that cultivate strong local social proof."
+      "Rank consistently in the Google Local 3-Pack and drive inbound phone calls with higher Google Maps ranking.",
+      "NAP consistency across top regional citations and directories powered by our local business listing services.",
+      "Proactive customer review generation strategies and review response playbooks to build lasting community trust.",
+      "Localized geo-grid tracking and search performance reports showcasing monthly increases in directional and phone inquiries."
     ],
     shortTitle: "Google Business Management",
     badge: "Local Map Pack Dominance",
     tagline: "Capture nearby buyers right when they search. Dominate Google Map Pack rankings in your territory.",
-    description: "Capture local buyers at the exact moment they search for your services. Our specialized Google My Business optimization and hands-on GMB profile management programs provide complete local business listing services engineered to secure dominant Google Maps ranking and drive a steady stream of calls, inquiries, and store visits.",
+    description: "Capture high-intent local customers right when they search nearby with expert Google My Business optimization that drives direct calls and store visits.",
     longDescription: [
-      "Over 46% of all Google searches have local commercial intent. When nearby prospects search for your services, showing up in the Google Maps Local 3-Pack is the difference between overflowing inquiries and complete obscurity.",
-      "Step Up Marketing actively manages, optimizes, and protects your Google Business Profile (GBP) with weekly updates, geo-tagged photo uploads, review generation strategies, category optimization, and local citation synchronization across 50+ directories."
+      "Over 46% of all Google searches have local commercial intent. Our hands-on GMB profile management ensures your business information remains flawless, active, and fully optimized to capture prime visibility when buyers search in your area.",
+      "We handle continuous geo-tagged photo uploads, weekly promotional updates, review generation funnels, and attribute auditing to build unmatched local topical authority."
     ],
     rating: "4.95 / 5.0",
     startingPrice: "Starting from $650/mo",
@@ -775,20 +775,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "email-marketing",
     title: "Email Marketing Campaigns & Email Automation Services",
-    h2Heading: "Full-Service Newsletter Marketing Agency & Email Automation",
+    h2Heading: "Full-Service Newsletter Marketing Agency & Retention Strategy",
     bulletPoints: [
-          "Automated nurture sequences, welcome funnels, and cart abandonment triggers delivered via email automation services.",
-          "Professionally branded, mobile-responsive email templates crafted by a specialized newsletter marketing agency.",
-          "Subscriber segmentation based on customer interest and past engagement to boost open rates and click-throughs.",
-          "Ongoing A/B testing of subject lines, sending times, and email copy backed by an actionable email marketing strategy."
+      "Engaging, high-open-rate newsletters crafted by our experienced newsletter marketing agency.",
+      "Comprehensive lifecycle email marketing strategy integrating acquisition, nurturing, retention, and win-back flows.",
+      "Advanced audience segmentation and dynamic content personalization to maximize click-through and purchase rates.",
+      "Rigorous list hygiene, SPF/DKIM/DMARC verification, and deliverability monitoring to ensure 99%+ inbox placement."
     ],
     shortTitle: "Email Marketing",
     badge: "Automated Revenue Retention",
     tagline: "Nurture leads, recover abandoned carts, and maximize customer lifetime value with automated email funnels.",
-    description: "Transform one-time buyers into repeat, high-lifetime-value clients. Our team crafts high-engagement email marketing campaigns powered by intelligent email automation services. As a full-service newsletter marketing agency, we build an airtight email marketing strategy that nurtures leads and drives steady revenue on autopilot.",
+    description: "Turn one-time visitors into repeat lifelong customers with targeted email marketing campaigns that drive consistent, predictable revenue.",
     longDescription: [
-      "Email marketing consistently delivers the highest ROI of any digital channel—often exceeding 40:1 when executed with precision. Blasting generic monthly newsletters to an unsegmented list burns subscriber goodwill and hurts deliverability.",
-      "Step Up Marketing engineers automated lifecycle flows: from welcome sequences and abandoned cart recovery to VIP loyalty loops, re-engagement campaigns, and high-converting promotional broadcasts that generate dependable cash flow on demand."
+      "Email marketing consistently delivers the highest ROI of any digital marketing channel. With turnkey email automation services, Step Up Marketing builds behavioral triggers, welcome funnels, and cart abandonment sequences that generate sales while you sleep.",
+      "We maintain pristine sender reputation, optimize inbox deliverability, and segment your audience so every subscriber receives relevant, timely, and persuasive communication."
     ],
     rating: "4.9 / 5.0",
     startingPrice: "Starting from $1,200/mo",
@@ -879,20 +879,20 @@ export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "brand-strategy",
     title: "Brand Strategy Consulting & Strategic Brand Positioning Services",
-    h2Heading: "Expert Brand Positioning Services & Identity Development",
+    h2Heading: "Brand Identity Development & Unified Messaging Systems",
     bulletPoints: [
-          "In-depth customer research and competitor differentiation frameworks delivered through brand strategy consulting.",
-          "Clear value propositions and market differentiation established through proven brand positioning services.",
-          "Comprehensive brand identity development articulating brand vision, core values, tone of voice, and visual guidelines.",
-          "Unified brand messaging strategy ensuring cohesive communication across digital ads, social media, and customer touchpoints."
+      "Comprehensive brand identity development articulating your core vision, mission, personality, and visual design standards.",
+      "Unified brand messaging strategy providing persuasive copy frameworks for website, sales decks, and advertising.",
+      "Customer persona research and Ideal Customer Profile (ICP) mapping to ensure resonant, high-converting messaging.",
+      "Competitive vulnerability analysis and positioning frameworks that protect margins and command market leadership."
     ],
     shortTitle: "Brand Strategy",
     badge: "Market Positioning Authority",
     tagline: "Articulate your true value proposition, establish competitive differentiation, and command market leadership.",
-    description: "Carve out an uncontested position in your marketplace with expert brand strategy consulting from Step Up Marketing. We deliver strategic brand positioning services, cohesive brand identity development, and an authentic brand messaging strategy that builds trust, commands premium pricing, and fuels sustainable business growth.",
+    description: "Carve out an uncontested market position and command premium pricing with senior brand strategy consulting from Step Up Marketing.",
     longDescription: [
-      "When companies struggle with pricing resistance or long sales cycles, the root cause is almost always weak market positioning. If your audience cannot immediately articulate why you are different and better, they default to comparing you on price.",
-      "Step Up Marketing's brand strategy practice guides leadership teams through customer ICP profiling, competitor vulnerability analysis, value proposition refinement, and unified brand messaging playbooks that command premium pricing."
+      "When businesses struggle with price resistance, the root cause is almost always weak differentiation. Through rigorous brand positioning services, we analyze your target audience, evaluate competitors, and establish a distinctive value proposition that makes your company the obvious choice.",
+      "We translate strategic positioning into actionable brand guidelines, empowering your marketing, sales, and executive teams to communicate with absolute clarity and authority."
     ],
     rating: "4.95 / 5.0",
     startingPrice: "Starting from $2,500 / strategic sprint",
