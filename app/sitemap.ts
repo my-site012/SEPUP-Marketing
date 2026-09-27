@@ -1,37 +1,49 @@
 import { MetadataRoute } from "next";
+import { SERVICES_DATA } from "@/lib/servicesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://stepupmarketing.com";
-  return [
+  const now = new Date();
+
+  const serviceUrls: MetadataRoute.Sitemap = SERVICES_DATA.map((service) => ({
+    url: `${baseUrl}/services/${service.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
+  const staticUrls: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified: now,
+      changeFrequency: "weekly" as const,
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/#services`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      url: `${baseUrl}/services`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/#industries`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/#portfolio`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
       priority: 0.9,
     },
   ];
+
+  return [...staticUrls, ...serviceUrls];
 }

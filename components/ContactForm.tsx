@@ -1,18 +1,58 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {
+  SERVICE_CHECKBOX_OPTIONS,
+  INDUSTRY_DROPDOWN_OPTIONS,
+} from "@/lib/servicesData";
 
-export default function ContactForm() {
+interface ContactFormProps {
+  defaultService?: string;
+  formTitle?: string;
+  formSubtitle?: string;
+}
+
+export default function ContactForm({
+  defaultService,
+  formTitle = "Request Strategy Evaluation",
+  formSubtitle = "Receive a comprehensive organic and technical growth blueprint with zero commitments.",
+}: ContactFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    service: "ai-seo",
+    industry: "Real Estate",
     url: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (defaultService) {
+      // Find matching checkbox option if possible
+      const match = SERVICE_CHECKBOX_OPTIONS.find((s) =>
+        s.toLowerCase().includes(defaultService.toLowerCase()) ||
+        defaultService.toLowerCase().includes(s.toLowerCase())
+      );
+      if (match) {
+        setSelectedServices([match]);
+      } else {
+        setSelectedServices([defaultService]);
+      }
+    } else {
+      setSelectedServices(["Search Engine Optimization (SEO)"]);
+    }
+  }, [defaultService]);
+
+  const handleCheckboxToggle = (service: string) => {
+    setSelectedServices((prev) =>
+      prev.includes(service)
+        ? prev.filter((s) => s !== service)
+        : [...prev, service]
+    );
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -22,13 +62,17 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (selectedServices.length === 0) {
+      alert("Please select at least one service you are interested in.");
+      return;
+    }
     setIsSubmitted(true);
     setFormData({
       name: "",
       email: "",
       phone: "",
       company: "",
-      service: "ai-seo",
+      industry: "Real Estate",
       url: "",
       message: "",
     });
@@ -38,14 +82,15 @@ export default function ContactForm() {
     <div className="p-8 sm:p-10 rounded-3xl bg-surface-container-lowest border border-[#f87b7b]/20 shadow-xl">
       <div className="mb-6">
         <h3 className="font-headline-lg text-headline-lg text-on-surface font-bold">
-          Request Strategy Evaluation
+          {formTitle}
         </h3>
         <p className="font-body-md text-body-md text-on-surface-variant mt-1">
-          Receive a comprehensive organic and technical growth blueprint with zero commitments.
+          {formSubtitle}
         </p>
       </div>
 
-      <form className="space-y-4" onSubmit={handleSubmit} id="growth-inquiry-form">
+      <form className="space-y-5" onSubmit={handleSubmit} id="growth-inquiry-form">
+        {/* Name and Email */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label
@@ -85,6 +130,7 @@ export default function ContactForm() {
           </div>
         </div>
 
+        {/* Phone and Company */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label
@@ -99,7 +145,7 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
-              placeholder="+1 (555) 019-2834"
+              placeholder="+1 416-873-5556"
               required
               type="tel"
             />
@@ -124,27 +170,27 @@ export default function ContactForm() {
           </div>
         </div>
 
+        {/* Industry and Website URL */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label
               className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
-              htmlFor="lead-service"
+              htmlFor="lead-industry"
             >
-              Primary Capability Needed *
+              Industry / Sector *
             </label>
             <select
-              id="lead-service"
-              name="service"
-              value={formData.service}
+              id="lead-industry"
+              name="industry"
+              value={formData.industry}
               onChange={handleChange}
               className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
             >
-              <option value="ai-seo">AI SEO &amp; Generative Engine Optimization (GEO)</option>
-              <option value="web-dev">High-Performance Web Development</option>
-              <option value="search-ads">Google Ads &amp; Performance PPC</option>
-              <option value="ai-automation">AI Business Workflows &amp; CRM Routing</option>
-              <option value="ecommerce">Headless E-Commerce Architecture</option>
-              <option value="full-growth">Comprehensive Full-Suite Growth Partnership</option>
+              {INDUSTRY_DROPDOWN_OPTIONS.map((ind) => (
+                <option key={ind} value={ind}>
+                  {ind}
+                </option>
+              ))}
             </select>
           </div>
           <div>
@@ -152,7 +198,7 @@ export default function ContactForm() {
               className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
               htmlFor="lead-url"
             >
-              Current Website / App URL
+              Current Website / Social URL
             </label>
             <input
               id="lead-url"
@@ -166,6 +212,39 @@ export default function ContactForm() {
           </div>
         </div>
 
+        {/* Multi-Select Services Checkboxes (Matching Image 1) */}
+        <div>
+          <label className="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+            Which service(s) are you interested in? *
+          </label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            {SERVICE_CHECKBOX_OPTIONS.map((serviceName) => {
+              const isChecked = selectedServices.includes(serviceName);
+              return (
+                <label
+                  key={serviceName}
+                  className={`flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-colors ${
+                    isChecked
+                      ? "bg-[#ffe4e6] text-[#e11d48] font-semibold"
+                      : "hover:bg-white text-on-surface-variant hover:text-on-surface"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={() => handleCheckboxToggle(serviceName)}
+                    className="w-4 h-4 rounded text-[#e11d48] border-slate-300 focus:ring-[#f87b7b] cursor-pointer"
+                  />
+                  <span className="font-body-sm text-[13px] leading-tight">
+                    {serviceName}
+                  </span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Message */}
         <div>
           <label
             className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
@@ -179,7 +258,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             className="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
-            placeholder="Tell us about your pipeline targets, timeline, and current acquisition challenges..."
+            placeholder="Tell us about your target pipeline, budget range, and timeline..."
             rows={3}
           />
         </div>

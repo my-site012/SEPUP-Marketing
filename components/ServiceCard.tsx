@@ -35,8 +35,8 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       </div>
 
       <div className="pt-6 mt-6 flex items-center justify-between text-[#e11d48] font-label-lg text-label-lg">
-        <Link href="#contact" className="inline-flex items-center justify-between w-full font-bold group-hover:underline">
-          <span>Learn More</span>
+        <Link href={`/services/${service.id}`} className="inline-flex items-center justify-between w-full font-bold group-hover:underline">
+          <span>Explore Service</span>
           <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform" aria-hidden="true">
             arrow_forward
           </span>
