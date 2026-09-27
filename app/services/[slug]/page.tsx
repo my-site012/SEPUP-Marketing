@@ -215,7 +215,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 </div>
 
                 {/* Main Headline */}
-                <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] max-w-2xl mb-5">
+                <h1 className="text-2xl sm:text-4xl lg:text-[44px] font-extrabold text-white tracking-tight leading-[1.15] max-w-2xl mb-4">
                   {service.title}
                 </h1>
 

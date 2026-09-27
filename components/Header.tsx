@@ -15,12 +15,12 @@ export default function Header() {
         <div className="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter">
           {/* Logo & Brand Mark */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0 group py-1" aria-label="Step Up Marketing Home">
-            <div className="relative h-12 w-32 sm:h-14 sm:w-40 md:h-16 md:w-44 shrink-0 transition-transform duration-200 group-hover:scale-[1.03]">
+            <div className="relative h-9 w-24 sm:h-10 sm:w-28 md:h-11 md:w-32 shrink-0 transition-transform duration-200 group-hover:scale-[1.03]">
               <Image
                 src={BRAND.headerLogo}
                 alt="Step Up Marketing Logo"
                 fill
-                sizes="(max-width: 640px) 140px, 180px"
+                sizes="(max-width: 640px) 100px, 130px"
                 className="object-contain object-left"
                 priority
               />

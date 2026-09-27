@@ -10,7 +10,7 @@ export default function IndustriesGrid() {
           <span className="font-label-eyebrow text-label-eyebrow text-[#e11d48] uppercase tracking-widest font-bold">
             Specialized Verticals
           </span>
-          <h2 className="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-surface tracking-tight leading-snug">
             Digital Growth Across High-Impact Industries.
           </h2>
           <p className="font-body-lead text-body-lead text-on-surface-variant">

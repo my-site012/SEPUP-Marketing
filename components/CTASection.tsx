@@ -21,7 +21,7 @@ export default function CTASection() {
               Step Up Your Growth Today
             </div>
 
-            <h2 className="font-headline-xl text-headline-xl lg:text-display-hero text-white font-bold tracking-tight leading-[1.1]">
+            <h2 className="text-2xl sm:text-3xl lg:text-[40px] text-white font-bold tracking-tight leading-[1.2]">
               Ready To Make Your Digital Presence Work Harder?
             </h2>
 

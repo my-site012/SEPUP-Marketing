@@ -48,12 +48,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-5 border-b border-[#f87b7b]/15">
-            <Link href="/" onClick={onClose} className="relative h-11 w-32 shrink-0">
+            <Link href="/" onClick={onClose} className="relative h-8 w-24 shrink-0">
               <Image
                 src={BRAND.headerLogo}
                 alt="Step Up Marketing Logo"
                 fill
-                sizes="128px"
+                sizes="100px"
                 className="object-contain object-left"
               />
             </Link>

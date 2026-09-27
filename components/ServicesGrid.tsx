@@ -12,7 +12,7 @@ export default function ServicesGrid() {
             <span className="font-label-eyebrow text-label-eyebrow text-[#e11d48] uppercase tracking-widest font-bold">
               Our Expertise
             </span>
-            <h2 className="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight mt-1">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-surface tracking-tight leading-snug mt-1">
               Everything You Need To Step Up &amp; Grow Online.
             </h2>
             <p className="font-body-lead text-body-lead text-on-surface-variant mt-2">

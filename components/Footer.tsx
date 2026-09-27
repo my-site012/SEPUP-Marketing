@@ -11,12 +11,12 @@ export default function Footer() {
           {/* Brand Info & Socials */}
           <div className="lg:col-span-4 flex flex-col items-start gap-space-sm">
             <Link href="/" className="flex items-center gap-3" aria-label="Step Up Marketing Home">
-              <div className="relative h-12 w-32 sm:h-14 sm:w-40 shrink-0">
+              <div className="relative h-9 w-24 sm:h-10 sm:w-28 shrink-0">
                 <Image
                   src={BRAND.footerLogo}
                   alt="Step Up Marketing Logo"
                   fill
-                  sizes="160px"
+                  sizes="120px"
                   className="object-contain object-left"
                 />
               </div>

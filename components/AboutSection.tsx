@@ -68,7 +68,7 @@ export default function AboutSection() {
               Step Up To Market Dominance
             </div>
 
-            <h2 className="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-surface tracking-tight leading-snug">
               Your Growth. Our Digital Expertise.
             </h2>
 

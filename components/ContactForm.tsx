@@ -65,22 +65,22 @@ export default function ContactForm({
   };
 
   return (
-    <div className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-surface-container-lowest border border-[#f87b7b]/20 shadow-xl">
-      <div className="mb-6">
-        <h3 className="font-headline-lg text-headline-lg text-on-surface font-bold">
+    <div className="p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-surface-container-lowest border border-[#f87b7b]/20 shadow-xl">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-xl sm:text-2xl font-bold text-on-surface">
           {formTitle}
         </h3>
-        <p className="font-body-md text-body-md text-on-surface-variant mt-1">
+        <p className="text-xs sm:text-sm text-on-surface-variant mt-1 leading-relaxed">
           {formSubtitle}
         </p>
       </div>
 
-      <form className="space-y-5" onSubmit={handleSubmit} id="growth-inquiry-form">
+      <form className="space-y-3.5 sm:space-y-4" onSubmit={handleSubmit} id="growth-inquiry-form">
         {/* Name and Email */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-name"
             >
               Full Name *
@@ -90,7 +90,7 @@ export default function ContactForm({
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
               placeholder="e.g. Julian Henderson"
               required
               type="text"
@@ -98,7 +98,7 @@ export default function ContactForm({
           </div>
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-email"
             >
               Business Email *
@@ -108,7 +108,7 @@ export default function ContactForm({
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
               placeholder="julian@enterprise.com"
               required
               type="email"
@@ -117,10 +117,10 @@ export default function ContactForm({
         </div>
 
         {/* Phone and Company */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-phone"
             >
               Phone Number *
@@ -130,7 +130,7 @@ export default function ContactForm({
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
               placeholder="+1 416-873-5556"
               required
               type="tel"
@@ -138,7 +138,7 @@ export default function ContactForm({
           </div>
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-company"
             >
               Company / Brand Name *
@@ -148,7 +148,7 @@ export default function ContactForm({
               name="company"
               value={formData.company}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
               placeholder="Vanguard Holdings Ltd."
               required
               type="text"
@@ -157,10 +157,10 @@ export default function ContactForm({
         </div>
 
         {/* Industry and Website URL */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-industry"
             >
               Industry / Sector *
@@ -170,7 +170,7 @@ export default function ContactForm({
               name="industry"
               value={formData.industry}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
             >
               {INDUSTRY_DROPDOWN_OPTIONS.map((ind) => (
                 <option key={ind} value={ind}>
@@ -181,7 +181,7 @@ export default function ContactForm({
           </div>
           <div>
             <label
-              className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+              className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
               htmlFor="lead-url"
             >
               Current Website / Social URL
@@ -191,7 +191,7 @@ export default function ContactForm({
               name="url"
               value={formData.url}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
               placeholder="https://example.com"
               type="url"
             />
@@ -201,7 +201,7 @@ export default function ContactForm({
         {/* Service Dropdown */}
         <div>
           <label
-            className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+            className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
             htmlFor="lead-service"
           >
             Which service are you interested in? *
@@ -212,7 +212,7 @@ export default function ContactForm({
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all appearance-none cursor-pointer pr-10"
+              className="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all appearance-none cursor-pointer pr-10"
               required
             >
               {SERVICE_CHECKBOX_OPTIONS.map((serviceName) => (
@@ -233,7 +233,7 @@ export default function ContactForm({
         {/* Message */}
         <div>
           <label
-            className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+            className="block text-[13px] sm:text-sm text-on-surface font-semibold mb-1"
             htmlFor="lead-message"
           >
             Growth Goals &amp; Current Bottlenecks
@@ -243,15 +243,15 @@ export default function ContactForm({
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
+            className="w-full p-3 sm:p-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface text-sm sm:text-base placeholder:text-outline focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all"
             placeholder="Tell us about your target pipeline, budget range, and timeline..."
             rows={3}
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 pb-6 sm:pb-0">
           <button
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer font-bold"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-bold shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer text-sm sm:text-base"
             type="submit"
           >
             <span>Send Strategy Request</span>
@@ -259,8 +259,8 @@ export default function ContactForm({
               send
             </span>
           </button>
-          <div className="flex items-center gap-2 text-on-surface-variant font-body-sm text-[12px]">
-            <span className="material-symbols-outlined text-[16px] text-[#e11d48]" aria-hidden="true">
+          <div className="flex items-center justify-center sm:justify-start gap-2 text-on-surface-variant text-[11px] sm:text-xs">
+            <span className="material-symbols-outlined text-[15px] text-[#e11d48]" aria-hidden="true">
               lock
             </span>
             <span>Mutual NDA executed automatically</span>

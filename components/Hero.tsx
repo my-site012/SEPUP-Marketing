@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
 
             {/* Main Display Headline */}
-            <h1 className="font-headline-xl text-headline-xl lg:text-display-hero text-on-surface tracking-tight leading-[1.08] max-w-2xl">
+            <h1 className="text-[28px] sm:text-4xl lg:text-[46px] font-extrabold text-on-surface tracking-tight leading-[1.15] max-w-2xl">
               Turn Your Digital Presence Into{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f87b7b] via-[#fb923c] to-[#4ecdc4]">
                 Real Business Growth
@@ -37,7 +37,7 @@ export default function Hero() {
             </h1>
 
             {/* Body Description */}
-            <p className="font-body-lead text-body-lead text-on-surface-variant max-w-xl">
+            <p className="text-sm sm:text-base lg:text-[17px] leading-relaxed text-on-surface-variant max-w-xl">
               We build high-performing websites, search strategies, AI-powered experiences, and targeted acquisition campaigns designed to capture demand, accelerate qualified pipelines, and scale enterprise revenue.
             </p>
 

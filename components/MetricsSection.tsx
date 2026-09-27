@@ -21,7 +21,7 @@ export default function MetricsSection() {
             <span className="font-label-eyebrow text-label-eyebrow text-[#fecdd3] uppercase tracking-widest font-bold">
               Verifiable Impact
             </span>
-            <h2 className="font-headline-xl text-headline-xl text-on-primary font-bold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-primary tracking-tight leading-snug">
               Compounding Numbers. Zero Speculation.
             </h2>
             <p className="font-body-md text-body-md text-slate-300">
@@ -30,13 +30,13 @@ export default function MetricsSection() {
           </div>
 
           {/* 6-Card Grid */}
-          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
             {EXECUTIVE_METRICS.map((metric) => (
               <div
                 key={metric.label}
-                className="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-inner hover:bg-white/10 transition-colors"
+                className="p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-inner hover:bg-white/10 transition-colors"
               >
-                <p className={`font-headline-xl text-headline-xl font-extrabold ${metric.color}`}>
+                <p className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold ${metric.color}`}>
                   {metric.value}
                 </p>
                 <p className="font-label-lg text-label-lg font-semibold text-white mt-1">
