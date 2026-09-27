@@ -5,20 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    max-width: 100vw;
     scroll-padding-top: 5.5rem;
   }
   
-  html, body {
+  body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    max-width: 100vw;
-  }
-  
-  body {
-    overscroll-behavior-y: none;
+    min-height: 100vh;
+    overflow-x: clip;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -67,19 +61,20 @@
 
 /* Custom scrollbar handling matching Stitch spec */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #faf8ff;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f87b7b40;
+  background: #f87b7b60;
   border-radius: 9999px;
+  border: 2px solid #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f87b7b80;
+  background: #f87b7b;
 }
