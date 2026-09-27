@@ -88,7 +88,9 @@ export async function generateMetadata({
   const canonicalUrl = `https://www.stepupmarketing.ca/services/${service.slug}`;
 
   return {
-    title: service.metaTitle,
+    title: {
+      absolute: service.metaTitle,
+    },
     description: service.metaDescription,
     keywords: service.keywords,
     alternates: {

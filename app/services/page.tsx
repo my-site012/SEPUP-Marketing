@@ -8,7 +8,9 @@ import { SERVICES_DATA } from "@/lib/servicesData";
 import { BRAND } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Growth Services | Step Up Marketing Mississauga & Toronto",
+  title: {
+    absolute: "Digital Growth Services | Step Up Marketing Mississauga",
+  },
   description:
     "Explore our complete suite of enterprise digital growth services: SEO, Next.js Web Development, Google Ads, Social Media, Branding, and Email Automation.",
   alternates: {

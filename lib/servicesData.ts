@@ -144,7 +144,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "100%. We practice only white-hat editorial outreach, digital PR, data-driven research studies, and verified citations that protect and elevate your domain integrity permanently."
       }
     ],
-    metaTitle: "SEO Services Agency & Organic Traffic Growth | Step Up Marketing",
+    metaTitle: "SEO Services Agency & Organic Growth | Step Up Marketing",
     metaDescription: "Grow your business with a trusted SEO services agency. We provide on-page SEO optimization, local SEO services, and long-term organic traffic growth.",
     keywords: ["SEO services agency","on-page SEO optimization","local SEO services","organic traffic growth"]
   },
@@ -248,7 +248,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Every single page is tested across standard desktop (1440px, 1280px), tablet (1024px, 768px), and mobile phone screens (430px, 390px, 375px) ensuring zero horizontal shift."
       }
     ],
-    metaTitle: "Website Design Company & Custom Web Development | Step Up Marketing",
+    metaTitle: "Website Design & Development Company | Step Up Marketing",
     metaDescription: "Build high-speed websites with our website design company. We offer custom web development, responsive website design, and modern UI/UX web design services.",
     keywords: ["website design company","custom web development","responsive website design","UI/UX web design services"]
   },
@@ -352,7 +352,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "We deploy dynamic number insertion (DNI) and CRM webhook integrations so every inbound phone call and form submission is traced directly to the exact keyword that produced it."
       }
     ],
-    metaTitle: "Google Ads Agency & PPC Campaign Management | Step Up Marketing",
+    metaTitle: "Google Ads Agency & PPC Management | Step Up Marketing",
     metaDescription: "Drive qualified leads fast with a certified Google Ads agency. We provide expert PPC campaign management, search ads marketing, and Google Ads optimization.",
     keywords: ["Google Ads agency","PPC campaign management","Google Ads optimization","search ads marketing"]
   },
@@ -456,7 +456,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, our in-house design and multimedia team produces custom branded carousels, static graphics, animated posts, and high-impact vertical reels."
       }
     ],
-    metaTitle: "Social Media Management Services | Social Media Handling Agency",
+    metaTitle: "Social Media Management Services | Step Up Marketing",
     metaDescription: "Scale your brand with expert social media management services. Our social media handling agency delivers content calendar management and organic growth.",
     keywords: ["social media management services","social media handling agency","content calendar management","social media growth services"]
   },
@@ -560,7 +560,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we specialize in high-ticket B2B LinkedIn advertising targeting C-level executives, directors, and enterprise decision-makers with matched company lists."
       }
     ],
-    metaTitle: "Facebook Ads Agency & Paid Social Media Marketing | Step Up",
+    metaTitle: "Facebook Ads Agency & Paid Social | Step Up Marketing",
     metaDescription: "Accelerate sales with our top-rated Facebook ads agency. We craft high-ROI Instagram ad campaigns and paid social media marketing with precision ad targeting.",
     keywords: ["Facebook ads agency","Instagram ad campaigns","paid social media marketing","social media ad targeting"]
   },
@@ -664,7 +664,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we offer dedicated monthly creative retainers providing on-demand design support for ad banners, social assets, presentations, and sales collateral with guaranteed turnaround SLAs."
       }
     ],
-    metaTitle: "Graphic Design Services & Logo Design Agency | Step Up Marketing",
+    metaTitle: "Graphic Design Services & Logo Agency | Step Up Marketing",
     metaDescription: "Elevate your visual identity with professional graphic design services. Our logo design agency and creative design company crafts high-impact brand graphics.",
     keywords: ["graphic design services","logo design agency","creative design company","brand graphics design"]
   },
@@ -768,7 +768,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we manage businesses with multiple clinics, branches, or franchises across Ontario, Canada, and North America with centralized reporting."
       }
     ],
-    metaTitle: "Google My Business Optimization & GMB Profile Management | Step Up",
+    metaTitle: "Google My Business & GMB Management | Step Up Marketing",
     metaDescription: "Win local customers with Google My Business optimization. Our GMB profile management improves Google Maps ranking and local business listing visibility.",
     keywords: ["Google My Business optimization","GMB profile management","local business listing services","Google Maps ranking"]
   },
@@ -872,7 +872,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Absolutely. In B2B, email automation acts as an indispensable pipeline nurturing tool that educates buyers over multi-month sales cycles until they are ready for a demo."
       }
     ],
-    metaTitle: "Email Marketing Campaigns & Automation Services | Step Up Marketing",
+    metaTitle: "Email Marketing & Automation Services | Step Up Marketing",
     metaDescription: "Engage subscribers and drive repeat sales with email marketing campaigns. Our newsletter marketing agency delivers automated email automation services.",
     keywords: ["email marketing campaigns","email automation services","newsletter marketing agency","email marketing strategy"]
   },
@@ -976,7 +976,7 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Brand strategy is the bedrock foundation. It dictates the exact headlines, architecture, and value points that go into your Next.js website and the commercial keywords targeted by our SEO campaigns."
       }
     ],
-    metaTitle: "Brand Strategy Consulting & Positioning Services | Step Up Marketing",
+    metaTitle: "Brand Strategy & Positioning Consulting | Step Up Marketing",
     metaDescription: "Stand out in competitive markets with brand strategy consulting. We offer brand positioning services, brand identity development, and clear messaging.",
     keywords: ["brand strategy consulting","brand positioning services","brand identity development","brand messaging strategy"]
   }
