@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Explore our complete suite of enterprise digital growth services: SEO, Next.js Web Development, Google Ads, Social Media, Branding, and Email Automation.",
   alternates: {
-    canonical: "https://stepupmarketing.com/services",
+    canonical: "https://www.stepupmarketing.ca/services",
   },
 };
 

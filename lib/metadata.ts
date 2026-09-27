@@ -4,7 +4,7 @@ export const siteMetadata = {
   title: "Step Up Marketing | Digital Growth & AI SEO Partner",
   description:
     "We build high-performing websites, generative search strategies (AI SEO & GEO), and automated acquisition pipelines designed to capture demand and scale enterprise revenue.",
-  siteUrl: "https://stepupmarketing.com",
+  siteUrl: "https://www.stepupmarketing.ca",
   brandName: BRAND.name,
 };
 

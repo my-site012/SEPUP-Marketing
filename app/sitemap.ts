@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { SERVICES_DATA } from "@/lib/servicesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://stepupmarketing.com";
+  const baseUrl = "https://www.stepupmarketing.ca";
   const now = new Date();
 
   const serviceUrls: MetadataRoute.Sitemap = SERVICES_DATA.map((service) => ({

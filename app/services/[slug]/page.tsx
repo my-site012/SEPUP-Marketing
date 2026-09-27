@@ -15,6 +15,74 @@ interface ServicePageProps {
   };
 }
 
+function highlightKeywords(text: string, keywords: string[]) {
+  if (!text) return null;
+  if (!keywords || keywords.length === 0) return text;
+
+  const phrases: string[] = [];
+  keywords.forEach((kw) => {
+    phrases.push(kw);
+    const words = kw
+      .split(" ")
+      .filter((w) => w.length > 3 && !["with", "from", "into", "your", "that", "this", "over"].includes(w.toLowerCase()));
+    phrases.push(...words);
+  });
+
+  const uniquePhrases = Array.from(new Set(phrases))
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length);
+
+  const escaped = uniquePhrases.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+
+  const parts = text.split(regex);
+  return parts.map((part, index) => {
+    const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
+    if (isKeyword) {
+      return (
+        <strong key={index} className="font-extrabold text-white underline decoration-[#f87b7b] decoration-2 underline-offset-4">
+          {part}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
+function highlightKeywordsDark(text: string, keywords: string[]) {
+  if (!text) return null;
+  if (!keywords || keywords.length === 0) return text;
+
+  const phrases: string[] = [];
+  keywords.forEach((kw) => {
+    phrases.push(kw);
+    const words = kw
+      .split(" ")
+      .filter((w) => w.length > 3 && !["with", "from", "into", "your", "that", "this", "over"].includes(w.toLowerCase()));
+    phrases.push(...words);
+  });
+
+  const uniquePhrases = Array.from(new Set(phrases))
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length);
+
+  const escaped = uniquePhrases.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+
+  const parts = text.split(regex);
+  return parts.map((part, index) => {
+    const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
+    if (isKeyword) {
+      return (
+        <strong key={index} className="font-bold text-slate-900 bg-rose-50 px-1 py-0.5 rounded border border-rose-100">
+          {part}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 export async function generateStaticParams() {
   return SERVICES_DATA.map((service) => ({
     slug: service.slug,
@@ -27,7 +95,7 @@ export async function generateMetadata({
   const service = SERVICES_DATA.find((s) => s.slug === params.slug);
   if (!service) return {};
 
-  const canonicalUrl = `https://stepupmarketing.com/services/${service.slug}`;
+  const canonicalUrl = `https://www.stepupmarketing.ca/services/${service.slug}`;
 
   return {
     title: service.metaTitle,
@@ -78,7 +146,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         provider: {
           "@type": "Organization",
           name: BRAND.name,
-          url: "https://stepupmarketing.com",
+          url: "https://www.stepupmarketing.ca",
           telephone: BRAND.phoneTel,
           address: {
             "@type": "PostalAddress",
@@ -118,22 +186,25 @@ export default function ServicePage({ params }: ServicePageProps) {
 
       <main className="w-full pt-20 bg-surface">
         {/* HERO SECTION (Styled after Reference Image 4) */}
-        <section className="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-[600px] lg:min-h-[660px] flex items-center justify-center overflow-hidden bg-[#090d1a]">
           {/* Background Photography with Dark Cinematic Overlay */}
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 z-0 pointer-events-none">
             <Image
               src={service.heroImage}
               alt={service.title}
               fill
               priority
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover object-center brightness-[0.7] contrast-125"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/50" />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-transparent" />
+            {/* Multi-layered dark gradients for crisp readability and cinematic glow */}
+            <div className="absolute inset-0 bg-[#090d1a]/85" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090d1a] via-[#090d1a]/70 to-[#090d1a]/80" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#090d1a] via-[#090d1a]/75 to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(244,63,94,0.18),transparent_60%)]" />
           </div>
 
-          <div className="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24 text-white">
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24 text-white">
             {/* Top Breadcrumb & Badge Row */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <Link
@@ -150,19 +221,38 @@ export default function ServicePage({ params }: ServicePageProps) {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] max-w-4xl mb-4">
+            <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] max-w-4xl mb-5">
               {service.title}
             </h1>
 
-            {/* Tagline / Subtitle */}
-            <p className="font-body-lead text-lg sm:text-xl text-slate-200 max-w-3xl leading-relaxed mb-8">
-              {service.tagline} {service.description}
+            {/* Tagline / Subtitle with Bold High-Intent Commercial Keywords */}
+            <p className="font-body-lead text-lg sm:text-xl text-slate-100 max-w-3xl leading-relaxed mb-6 font-normal">
+              {highlightKeywords(`${service.tagline} ${service.description}`, service.keywords)}
             </p>
+
+            {/* Target Commercial SEO Keywords Badges (Bold & High Visibility) */}
+            <div className="mb-8 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 max-w-3xl">
+              <div className="flex items-center gap-2 mb-2.5 text-slate-200 font-label-md text-xs uppercase tracking-wider font-bold">
+                <span className="material-symbols-outlined text-[16px] text-[#4ecdc4]">key</span>
+                <span>Core Target Commercial Keywords:</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {service.keywords.map((kw, idx) => (
+                  <span
+                    key={idx}
+                    className="px-3 py-1 rounded-full bg-slate-900/90 text-white border border-white/25 text-xs sm:text-[13px] font-bold shadow-sm flex items-center gap-1.5"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#f87b7b]"></span>
+                    <strong>{kw}</strong>
+                  </span>
+                ))}
+              </div>
+            </div>
 
             {/* Quick Meta Stats Badges (Matching Image 4 layout) */}
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 mb-8">
               {/* Rating */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold shadow-md">
                 <span className="text-[#fbbf24] material-symbols-outlined text-[18px] material-symbols-filled">
                   star
                 </span>
@@ -170,7 +260,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
 
               {/* Pricing */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold shadow-md">
                 <span className="text-[#4ecdc4] material-symbols-outlined text-[18px]">
                   sell
                 </span>
@@ -178,7 +268,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
 
               {/* Timeline */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold shadow-md">
                 <span className="text-[#fb923c] material-symbols-outlined text-[18px]">
                   schedule
                 </span>
@@ -186,7 +276,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
 
               {/* SLA */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-white font-label-md text-[13px] font-semibold shadow-md">
                 <span className="text-[#4ecdc4] material-symbols-outlined text-[18px]">
                   verified
                 </span>
@@ -272,7 +362,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               </h2>
               {service.longDescription.map((para, i) => (
                 <p key={i} className="font-body-lead text-body-lead text-on-surface-variant leading-relaxed">
-                  {para}
+                  {highlightKeywordsDark(para, service.keywords)}
                 </p>
               ))}
             </div>

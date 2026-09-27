@@ -18,41 +18,30 @@ export default function ContactForm({
   formSubtitle = "Receive a comprehensive organic and technical growth blueprint with zero commitments.",
 }: ContactFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
     industry: "Real Estate",
+    service: "Search Engine Optimization (SEO)",
     url: "",
     message: "",
   });
 
   useEffect(() => {
     if (defaultService) {
-      // Find matching checkbox option if possible
       const match = SERVICE_CHECKBOX_OPTIONS.find((s) =>
         s.toLowerCase().includes(defaultService.toLowerCase()) ||
         defaultService.toLowerCase().includes(s.toLowerCase())
       );
       if (match) {
-        setSelectedServices([match]);
+        setFormData((prev) => ({ ...prev, service: match }));
       } else {
-        setSelectedServices([defaultService]);
+        setFormData((prev) => ({ ...prev, service: defaultService }));
       }
-    } else {
-      setSelectedServices(["Search Engine Optimization (SEO)"]);
     }
   }, [defaultService]);
-
-  const handleCheckboxToggle = (service: string) => {
-    setSelectedServices((prev) =>
-      prev.includes(service)
-        ? prev.filter((s) => s !== service)
-        : [...prev, service]
-    );
-  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -62,10 +51,6 @@ export default function ContactForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selectedServices.length === 0) {
-      alert("Please select at least one service you are interested in.");
-      return;
-    }
     setIsSubmitted(true);
     setFormData({
       name: "",
@@ -73,6 +58,7 @@ export default function ContactForm({
       phone: "",
       company: "",
       industry: "Real Estate",
+      service: "Search Engine Optimization (SEO)",
       url: "",
       message: "",
     });
@@ -212,35 +198,35 @@ export default function ContactForm({
           </div>
         </div>
 
-        {/* Multi-Select Services Checkboxes (Matching Image 1) */}
+        {/* Service Dropdown */}
         <div>
-          <label className="block font-label-md text-label-md text-on-surface font-semibold mb-2">
-            Which service(s) are you interested in? *
+          <label
+            className="block font-label-md text-label-md text-on-surface font-semibold mb-1.5"
+            htmlFor="lead-service"
+          >
+            Which service are you interested in? *
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-            {SERVICE_CHECKBOX_OPTIONS.map((serviceName) => {
-              const isChecked = selectedServices.includes(serviceName);
-              return (
-                <label
-                  key={serviceName}
-                  className={`flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-colors ${
-                    isChecked
-                      ? "bg-[#ffe4e6] text-[#e11d48] font-semibold"
-                      : "hover:bg-white text-on-surface-variant hover:text-on-surface"
-                  }`}
-                >
-                  <input
-                    type="checkbox"
-                    checked={isChecked}
-                    onChange={() => handleCheckboxToggle(serviceName)}
-                    className="w-4 h-4 rounded text-[#e11d48] border-slate-300 focus:ring-[#f87b7b] cursor-pointer"
-                  />
-                  <span className="font-body-sm text-[13px] leading-tight">
-                    {serviceName}
-                  </span>
-                </label>
-              );
-            })}
+          <div className="relative">
+            <select
+              id="lead-service"
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              className="w-full h-12 px-4 rounded-xl bg-slate-50 border border-slate-200 text-on-surface font-body-md text-body-md focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#f87b7b] focus:border-[#f87b7b] shadow-sm transition-all appearance-none cursor-pointer pr-10"
+              required
+            >
+              {SERVICE_CHECKBOX_OPTIONS.map((serviceName) => (
+                <option key={serviceName} value={serviceName}>
+                  {serviceName}
+                </option>
+              ))}
+              <option value="Full-Funnel Growth Suite (All Services)">
+                Full-Funnel Growth Suite (All Services)
+              </option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+              <span className="material-symbols-outlined text-[20px]">expand_more</span>
+            </div>
           </div>
         </div>
 
