@@ -15,6 +15,8 @@ export interface ServiceFAQ {
 }
 
 export interface ServiceDetail {
+  h2Heading: string;
+  bulletPoints: string[];
   slug: string;
   title: string;
   shortTitle: string;
@@ -40,12 +42,18 @@ export interface ServiceDetail {
 export const SERVICES_DATA: ServiceDetail[] = [
   {
     slug: "seo",
-    title: "Search Engine Optimization (SEO) & AI GEO",
+    title: "SEO Services Agency & Organic Traffic Growth Solutions",
+    h2Heading: "Complete On-Page SEO Optimization & Local SEO Services",
+    bulletPoints: [
+          "Meticulous on-page SEO optimization optimizing metadata, header tags, keyword placement, and internal link structure.",
+          "Technical crawl error resolution, site speed enhancements, mobile usability fixes, and clean XML sitemap management.",
+          "Targeted local SEO services to capture local buyer searches and dominate localized Google search results.",
+          "Sustainable white-hat link acquisition and topical authority building designed for compounding organic traffic growth."
+    ],
     shortTitle: "Search Engine Optimization (SEO)",
     badge: "Organic Authority & GEO",
     tagline: "Dominate Google search results and generative AI answer engines like SearchGPT and Perplexity.",
-    description:
-      "Enterprise search optimization engineered to capture high-intent buyers, secure competitive category keywords, and scale organic pipeline with zero ad spend reliance.",
+    description: "Achieve sustainable, compounding visibility on search engines without ongoing ad spend. As a results-driven SEO services agency, we deliver exhaustive on-page SEO optimization, technical site enhancements, and authoritative local SEO services engineered to generate predictable organic traffic growth and high-value customer inquiries.",
     longDescription: [
       "Our SEO and Generative Engine Optimization (GEO) programs go far beyond basic meta tags. We conduct exhaustive technical audits, architectural restructuring, programmatic topic cluster builds, and brand authority campaigns to position your business as the definitive answer for search engines and generative AI models.",
       "By calibrating your digital assets for Google's Helpful Content System, core web vitals, and entity-based knowledge graphs, we guarantee compounding search visibility that yields predictable, qualified commercial pipeline month after month."
@@ -136,18 +144,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "100%. We practice only white-hat editorial outreach, digital PR, data-driven research studies, and verified citations that protect and elevate your domain integrity permanently."
       }
     ],
-    metaTitle: "SEO & AI GEO Services in Mississauga & Toronto | Step Up Marketing",
-    metaDescription: "Dominate Google search results and AI answer engines. Enterprise SEO, GEO optimization, technical audits, and high-intent organic lead generation in Canada & US.",
-    keywords: ["SEO agency Mississauga", "Search Engine Optimization Toronto", "AI SEO services", "GEO Generative Engine Optimization", "Technical SEO audit", "Enterprise SEO Canada"]
+    metaTitle: "SEO Services Agency & Organic Traffic Growth | Step Up Marketing",
+    metaDescription: "Grow your business with a trusted SEO services agency. We provide on-page SEO optimization, local SEO services, and long-term organic traffic growth.",
+    keywords: ["SEO services agency","on-page SEO optimization","local SEO services","organic traffic growth"]
   },
   {
     slug: "web-design-development",
-    title: "Web Design & Development",
+    title: "Website Design Company & Custom Web Development",
+    h2Heading: "Modern Responsive Website Design & UI/UX Web Design Services",
+    bulletPoints: [
+          "Sub-second loading Next.js and React architectures engineered to pass Google Core Web Vitals with flying colors.",
+          "Seamless responsive website design providing intuitive navigation across smartphones, tablets, and desktops.",
+          "High-converting user journeys and clean UI layouts created by our UI/UX web design services specialists.",
+          "Built-in on-page SEO foundations, schema markup, and frictionless inquiry forms ready to generate business from day one."
+    ],
     shortTitle: "Web Design & Development",
     badge: "Sub-Second Engineering",
     tagline: "High-performance websites engineered with Next.js, React, and modern conversion architectures.",
-    description:
-      "We build breathtaking, lightning-fast digital storefronts and enterprise platforms designed to wow visitors, maximize conversions, and dominate Core Web Vitals.",
+    description: "Your website is your company's most vital revenue engine. As an experienced website design company, Step Up Marketing specializes in custom web development and high-converting responsive website design. Our user-centric UI/UX web design services combine sub-second loading speeds with frictionless lead funnels that turn visitors into long-term clients.",
     longDescription: [
       "Your website is your company's most critical revenue asset. Slow loading times, generic templates, and clunky user journeys leak pipeline every single second. At Step Up Marketing, we design bespoke digital experiences with ultra-modern UI/UX aesthetics, responsive layouts, and clean headless architectures.",
       "From mobile-first speed optimization to integrated CRM hooks and frictionless quotation funnels, every build is crafted to convert high-ticket visitors into eager sales inquiries."
@@ -234,18 +248,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Every single page is tested across standard desktop (1440px, 1280px), tablet (1024px, 768px), and mobile phone screens (430px, 390px, 375px) ensuring zero horizontal shift."
       }
     ],
-    metaTitle: "Web Design & Development Agency Mississauga | Next.js Websites",
-    metaDescription: "Sub-second Next.js web development, custom UI/UX design, and conversion-optimized websites for ambitious enterprises in Canada and North America.",
-    keywords: ["web design Mississauga", "website development Toronto", "Next.js web developer", "custom business website", "responsive web design Canada"]
+    metaTitle: "Website Design Company & Custom Web Development | Step Up Marketing",
+    metaDescription: "Build high-speed websites with our website design company. We offer custom web development, responsive website design, and modern UI/UX web design services.",
+    keywords: ["website design company","custom web development","responsive website design","UI/UX web design services"]
   },
   {
     slug: "google-ads",
-    title: "Google Ads & PPC Performance Marketing",
+    title: "Google Ads Agency & Search Ads Marketing PPC Management",
+    h2Heading: "Data-Driven Search Ads Marketing & Google Ads Optimization",
+    bulletPoints: [
+          "Granular keyword curation targeting high commercial intent queries while actively excluding wasteful negative keywords.",
+          "Compelling responsive search ads and ad extensions crafted to maximize CTR and Quality Score.",
+          "Advanced conversion tracking with Google Tag Manager and GA4 for real-time lead and sales measurement.",
+          "Continuous bid adjustments and smart bidding strategies overseen by a certified Google Ads agency."
+    ],
     shortTitle: "Google Ads",
     badge: "High-Intent Acquisition",
-    tagline: "High-converting search ads, remarketing funnels, and precision target-CPA campaigns.",
-    description:
-      "Stop wasting budget on clicks that don't buy. We build granular Google Ads architectures engineered to capture bottom-funnel commercial demand with ruthless ROI.",
+    tagline: "High-converting search ads, remarketing funnels, and precision target-CPA campaigns that capture buyer intent.",
+    description: "Stop wasting your marketing budget on unqualified clicks. As a certified Google Ads agency, Step Up Marketing provides meticulous PPC campaign management and continuous Google Ads optimization. We build granular search ads marketing funnels that connect your offerings with high-intent commercial buyers actively seeking your solutions.",
     longDescription: [
       "Pay-Per-Click advertising only works when every single dollar is tied to qualified pipeline economics. At Step Up Marketing, our Google Certified Premier Partner team eliminates wasteful broad match spend, constructs tightly themed ad groups, writes persuasive ad copy, and matches campaigns with dedicated conversion landing pages.",
       "With real-time bid adjustments, negative keyword hygiene, and multi-touch CRM attribution, we consistently lower client acquisition costs while driving deal velocity."
@@ -332,18 +352,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "We deploy dynamic number insertion (DNI) and CRM webhook integrations so every inbound phone call and form submission is traced directly to the exact keyword that produced it."
       }
     ],
-    metaTitle: "Google Ads Management & PPC Agency Mississauga | Step Up Marketing",
-    metaDescription: "Google Premier Partner managing high-intent Google Ads, PPC performance campaigns, and lead generation in Mississauga, Toronto, and North America.",
-    keywords: ["Google Ads agency Mississauga", "PPC management Toronto", "Google advertising partner", "Pay Per Click agency Ontario", "Lead generation Google Ads"]
+    metaTitle: "Google Ads Agency & PPC Campaign Management | Step Up Marketing",
+    metaDescription: "Drive qualified leads fast with a certified Google Ads agency. We provide expert PPC campaign management, search ads marketing, and Google Ads optimization.",
+    keywords: ["Google Ads agency","PPC campaign management","Google Ads optimization","search ads marketing"]
   },
   {
     slug: "social-media-management",
-    title: "Social Media Management",
+    title: "Social Media Management Services for Growing Businesses",
+    h2Heading: "Why Choose Our Social Media Handling Agency",
+    bulletPoints: [
+          "Strategic content calendar management with structured weekly scheduling across Instagram, LinkedIn, and Facebook.",
+          "High-quality visual creatives, trending reels, and engaging copywriting crafted for your local target audience.",
+          "Dedicated community engagement and active direct message handling to nurture prospects into qualified leads.",
+          "Monthly performance analytics tracking audience reach, engagement velocity, and measurable social media growth services."
+    ],
     shortTitle: "Social Media Management",
-    badge: "Brand Authority & Engagement",
-    tagline: "Build a commanding, authentic social presence across LinkedIn, Instagram, Facebook, and X.",
-    description:
-      "We curate and execute executive-grade social content calendars that elevate brand positioning, foster audience loyalty, and turn followers into advocates.",
+    badge: "Organic Reach & Engagement",
+    tagline: "Build a loyal community and predictable inbound pipeline across Instagram, LinkedIn, and Facebook.",
+    description: "Step Up Marketing delivers comprehensive social media management services designed to turn everyday followers into paying customers. As a dedicated social media handling agency, our team handles strategic content calendar management, visual storytelling, and audience engagement to deliver dependable social media growth services for small and medium businesses.",
     longDescription: [
       "In a crowded digital marketplace, irregular posting and generic stock graphics damage your credibility. Step Up Marketing manages your entire social ecosystem with bespoke visual assets, thought-leadership ghostwriting, community moderation, and strategic cross-channel distribution.",
       "We focus on executive presence and business outcomes: driving direct website traffic, establishing category authority, and keeping your company top-of-mind with prospects."
@@ -430,18 +456,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, our in-house design and multimedia team produces custom branded carousels, static graphics, animated posts, and high-impact vertical reels."
       }
     ],
-    metaTitle: "Social Media Management Agency Mississauga | Step Up Marketing",
-    metaDescription: "Full-service social media management for LinkedIn, Instagram, and Facebook. Custom graphic design, thought leadership, and brand growth in Canada & US.",
-    keywords: ["social media management Mississauga", "social media agency Toronto", "Instagram marketing Canada", "LinkedIn B2B social management", "content creation agency"]
+    metaTitle: "Social Media Management Services | Social Media Handling Agency",
+    metaDescription: "Scale your brand with expert social media management services. Our social media handling agency delivers content calendar management and organic growth.",
+    keywords: ["social media management services","social media handling agency","content calendar management","social media growth services"]
   },
   {
     slug: "social-media-advertising",
-    title: "Social Media Advertising (Meta & LinkedIn)",
+    title: "Paid Social Media Marketing & High-ROI Ad Campaigns",
+    h2Heading: "High-Converting Facebook Ads Agency & Instagram Ad Campaigns",
+    bulletPoints: [
+          "Laser-focused social media ad targeting leveraging custom audiences, lookalike modeling, and consumer buying behaviors.",
+          "High-impact ad creatives, video hooks, and dynamic product catalogs developed by a proven Facebook ads agency.",
+          "Multi-platform campaign execution across Meta, Instagram, and LinkedIn with continuous split testing to minimize CPA.",
+          "Server-side conversion API tracking and transparent reporting ensuring closed-loop revenue attribution."
+    ],
     shortTitle: "Social Media Advertising",
-    badge: "Paid Acquisition & Scale",
-    tagline: "High-ROAS paid advertising funnels across Meta (Facebook/Instagram), LinkedIn, and TikTok.",
-    description:
-      "Precision-targeted ad campaigns engineered to generate qualified inbound leads, scale e-commerce transactions, and lower cost-per-acquisition.",
+    badge: "High-ROI Paid Funnels",
+    tagline: "Turn ad spend into measurable revenue with precision audience targeting and high-converting creative hooks.",
+    description: "Maximize your advertising ROI with Step Up Marketing, a performance-focused Facebook ads agency serving ambitious SMBs. We launch high-converting Instagram ad campaigns and end-to-end paid social media marketing architectures calibrated with precision social media ad targeting to capture high-intent buyers and drive predictable revenue.",
     longDescription: [
       "Organic reach alone is not enough to hit aggressive enterprise revenue targets. Our paid social specialists build full-funnel paid advertising systems that target prospects by job title, industry, behavioral interests, and purchase intent.",
       "From UGC-style video ads and carousel creatives to advanced Meta Pixel / Conversions API (CAPI) setups, we ensure every advertising dollar yields transparent, measurable revenue."
@@ -528,18 +560,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we specialize in high-ticket B2B LinkedIn advertising targeting C-level executives, directors, and enterprise decision-makers with matched company lists."
       }
     ],
-    metaTitle: "Social Media Advertising Agency | Meta & LinkedIn Ads Mississauga",
-    metaDescription: "High-ROAS Meta (Facebook, Instagram) and LinkedIn paid ads management. High-converting creative, server-side CAPI tracking, and scalable lead generation.",
-    keywords: ["social media advertising Mississauga", "Facebook Ads agency Toronto", "LinkedIn ads agency Canada", "paid social management", "Instagram ad campaign agency"]
+    metaTitle: "Facebook Ads Agency & Paid Social Media Marketing | Step Up",
+    metaDescription: "Accelerate sales with our top-rated Facebook ads agency. We craft high-ROI Instagram ad campaigns and paid social media marketing with precision ad targeting.",
+    keywords: ["Facebook ads agency","Instagram ad campaigns","paid social media marketing","social media ad targeting"]
   },
   {
     slug: "graphic-designing",
-    title: "Graphic Designing & Creative Studio",
+    title: "Professional Graphic Design Services & Visual Branding",
+    h2Heading: "Premier Logo Design Agency & Creative Design Company",
+    bulletPoints: [
+          "Bespoke logo creation and visual identity guidelines designed by an experienced logo design agency.",
+          "Comprehensive marketing collateral including business cards, brochures, presentation decks, and print-ready files.",
+          "Attention-grabbing digital banners and high-converting ad graphics crafted by a dedicated creative design company.",
+          "Full commercial asset ownership with vector source files delivered for web, social, and print applications."
+    ],
     shortTitle: "Graphic Designing",
-    badge: "Visual Excellence & Identity",
-    tagline: "World-class graphic design, marketing collateral, brand guidelines, and visual storytelling.",
-    description:
-      "Captivate attention and stand apart from competitors with sleek, high-end graphic design assets crafted by seasoned art directors.",
+    badge: "Bespoke Brand Visuals",
+    tagline: "Captivate prospects with cohesive visual brand collateral, packaging, and commercial design assets.",
+    description: "Make a lasting first impression with professional graphic design services from Step Up Marketing. As a full-service logo design agency and creative design company, we craft bespoke visual assets, marketing collateral, and premium brand graphics design that elevate your brand perception and outperform competitors.",
     longDescription: [
       "Your visual identity directly signals the perceived value of your products and services. Inconsistent graphics, poor typography, and amateur layouts repel high-paying clients before they ever hear your pitch.",
       "Step Up Marketing's creative studio provides end-to-end graphic design solutions: from brand identity overhauls and digital marketing banners to premium print brochures, packaging, and presentation decks that leave a lasting impression."
@@ -626,18 +664,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we offer dedicated monthly creative retainers providing on-demand design support for ad banners, social assets, presentations, and sales collateral with guaranteed turnaround SLAs."
       }
     ],
-    metaTitle: "Graphic Design Studio Mississauga & Toronto | Step Up Marketing",
-    metaDescription: "Professional graphic design, branding, logo design, sales collateral, and marketing visuals for ambitious companies in Canada and North America.",
-    keywords: ["graphic designer Mississauga", "branding agency Toronto", "logo design Canada", "marketing collateral design", "creative agency Mississauga"]
+    metaTitle: "Graphic Design Services & Logo Design Agency | Step Up Marketing",
+    metaDescription: "Elevate your visual identity with professional graphic design services. Our logo design agency and creative design company crafts high-impact brand graphics.",
+    keywords: ["graphic design services","logo design agency","creative design company","brand graphics design"]
   },
   {
     slug: "google-business-management",
-    title: "Google Business Profile & Local SEO Management",
+    title: "Google My Business Optimization & Local Maps Ranking",
+    h2Heading: "Complete GMB Profile Management & Local Listing Services",
+    bulletPoints: [
+          "Exhaustive Google My Business optimization covering verified categories, accurate NAP citations, and geo-tagged images.",
+          "Active GMB profile management with weekly Google Posts, promotional offers, and customer Q&A management.",
+          "Local citation syndication across major directories to elevate your organic Google Maps ranking.",
+          "Automated review generation workflows and professional review responses that cultivate strong local social proof."
+    ],
     shortTitle: "Google Business Management",
     badge: "Local Map Pack Dominance",
-    tagline: "Own your local territory. Rank #1 in Google Maps and drive high-intent local phone calls and visits.",
-    description:
-      "Transform your Google Business Profile into an automated customer acquisition machine that commands the local 3-pack for high-value searches in your city.",
+    tagline: "Capture nearby buyers right when they search. Dominate Google Map Pack rankings in your territory.",
+    description: "Capture local buyers at the exact moment they search for your services. Our specialized Google My Business optimization and hands-on GMB profile management programs provide complete local business listing services engineered to secure dominant Google Maps ranking and drive a steady stream of calls, inquiries, and store visits.",
     longDescription: [
       "Over 46% of all Google searches have local commercial intent. When nearby prospects search for your services, showing up in the Google Maps Local 3-Pack is the difference between overflowing inquiries and complete obscurity.",
       "Step Up Marketing actively manages, optimizes, and protects your Google Business Profile (GBP) with weekly updates, geo-tagged photo uploads, review generation strategies, category optimization, and local citation synchronization across 50+ directories."
@@ -724,18 +768,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Yes, we manage businesses with multiple clinics, branches, or franchises across Ontario, Canada, and North America with centralized reporting."
       }
     ],
-    metaTitle: "Google Business Profile & Local SEO Management | Step Up Marketing",
-    metaDescription: "Dominate Google Maps and local search. Complete Google Business Profile optimization, review generation, and local SEO in Mississauga and Toronto.",
-    keywords: ["Google Business Profile management", "Google Maps optimization Mississauga", "Local SEO Toronto", "GBP agency Canada", "Local 3 pack ranking"]
+    metaTitle: "Google My Business Optimization & GMB Profile Management | Step Up",
+    metaDescription: "Win local customers with Google My Business optimization. Our GMB profile management improves Google Maps ranking and local business listing visibility.",
+    keywords: ["Google My Business optimization","GMB profile management","local business listing services","Google Maps ranking"]
   },
   {
     slug: "email-marketing",
-    title: "Email Marketing & Retention Automation",
+    title: "Email Marketing Campaigns & Email Automation Services",
+    h2Heading: "Full-Service Newsletter Marketing Agency & Email Automation",
+    bulletPoints: [
+          "Automated nurture sequences, welcome funnels, and cart abandonment triggers delivered via email automation services.",
+          "Professionally branded, mobile-responsive email templates crafted by a specialized newsletter marketing agency.",
+          "Subscriber segmentation based on customer interest and past engagement to boost open rates and click-throughs.",
+          "Ongoing A/B testing of subject lines, sending times, and email copy backed by an actionable email marketing strategy."
+    ],
     shortTitle: "Email Marketing",
-    badge: "Retention & Lifecycle Revenue",
-    tagline: "Turn subscribers into repeat buyers with intelligent automated email sequences and newsletter campaigns.",
-    description:
-      "Unlock compounding revenue from your existing customer database through sophisticated email automation, hyper-segmentation, and high-converting copy.",
+    badge: "Automated Revenue Retention",
+    tagline: "Nurture leads, recover abandoned carts, and maximize customer lifetime value with automated email funnels.",
+    description: "Transform one-time buyers into repeat, high-lifetime-value clients. Our team crafts high-engagement email marketing campaigns powered by intelligent email automation services. As a full-service newsletter marketing agency, we build an airtight email marketing strategy that nurtures leads and drives steady revenue on autopilot.",
     longDescription: [
       "Email marketing consistently delivers the highest ROI of any digital channel—often exceeding 40:1 when executed with precision. Blasting generic monthly newsletters to an unsegmented list burns subscriber goodwill and hurts deliverability.",
       "Step Up Marketing engineers automated lifecycle flows: from welcome sequences and abandoned cart recovery to VIP loyalty loops, re-engagement campaigns, and high-converting promotional broadcasts that generate dependable cash flow on demand."
@@ -822,18 +872,24 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Absolutely. In B2B, email automation acts as an indispensable pipeline nurturing tool that educates buyers over multi-month sales cycles until they are ready for a demo."
       }
     ],
-    metaTitle: "Email Marketing & Automation Agency Mississauga | Step Up Marketing",
-    metaDescription: "Lifecycle email marketing, Klaviyo automation flows, newsletter management, and high-converting copy that scales customer retention and lifetime value.",
-    keywords: ["email marketing agency Mississauga", "Klaviyo agency Toronto", "email automation Canada", "retention marketing", "B2B email marketing"]
+    metaTitle: "Email Marketing Campaigns & Automation Services | Step Up Marketing",
+    metaDescription: "Engage subscribers and drive repeat sales with email marketing campaigns. Our newsletter marketing agency delivers automated email automation services.",
+    keywords: ["email marketing campaigns","email automation services","newsletter marketing agency","email marketing strategy"]
   },
   {
     slug: "brand-strategy",
-    title: "Brand Strategy & Digital Positioning",
+    title: "Brand Strategy Consulting & Strategic Brand Positioning Services",
+    h2Heading: "Expert Brand Positioning Services & Identity Development",
+    bulletPoints: [
+          "In-depth customer research and competitor differentiation frameworks delivered through brand strategy consulting.",
+          "Clear value propositions and market differentiation established through proven brand positioning services.",
+          "Comprehensive brand identity development articulating brand vision, core values, tone of voice, and visual guidelines.",
+          "Unified brand messaging strategy ensuring cohesive communication across digital ads, social media, and customer touchpoints."
+    ],
     shortTitle: "Brand Strategy",
-    badge: "Market Differentiation",
-    tagline: "Define an unassailable market moat and communicate your company's true commercial value.",
-    description:
-      "Transform your business from a commoditized option into the definitive, premium choice in your category through strategic positioning and messaging.",
+    badge: "Market Positioning Authority",
+    tagline: "Articulate your true value proposition, establish competitive differentiation, and command market leadership.",
+    description: "Carve out an uncontested position in your marketplace with expert brand strategy consulting from Step Up Marketing. We deliver strategic brand positioning services, cohesive brand identity development, and an authentic brand messaging strategy that builds trust, commands premium pricing, and fuels sustainable business growth.",
     longDescription: [
       "When companies struggle with pricing resistance or long sales cycles, the root cause is almost always weak market positioning. If your audience cannot immediately articulate why you are different and better, they default to comparing you on price.",
       "Step Up Marketing's brand strategy practice guides leadership teams through customer ICP profiling, competitor vulnerability analysis, value proposition refinement, and unified brand messaging playbooks that command premium pricing."
@@ -920,9 +976,9 @@ export const SERVICES_DATA: ServiceDetail[] = [
         answer: "Brand strategy is the bedrock foundation. It dictates the exact headlines, architecture, and value points that go into your Next.js website and the commercial keywords targeted by our SEO campaigns."
       }
     ],
-    metaTitle: "Brand Strategy & Positioning Agency | Step Up Marketing",
-    metaDescription: "Strategic brand positioning, value proposition development, and go-to-market messaging playbooks for ambitious enterprises in Canada and North America.",
-    keywords: ["brand strategy agency Mississauga", "business positioning Toronto", "brand messaging playbook", "B2B brand strategy", "value proposition consultant"]
+    metaTitle: "Brand Strategy Consulting & Positioning Services | Step Up Marketing",
+    metaDescription: "Stand out in competitive markets with brand strategy consulting. We offer brand positioning services, brand identity development, and clear messaging.",
+    keywords: ["brand strategy consulting","brand positioning services","brand identity development","brand messaging strategy"]
   }
 ];
 

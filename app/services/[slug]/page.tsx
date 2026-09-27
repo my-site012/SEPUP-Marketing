@@ -40,7 +40,7 @@ function highlightKeywords(text: string, keywords: string[]) {
     const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
     if (isKeyword) {
       return (
-        <strong key={index} className="font-extrabold text-white underline decoration-[#f87b7b] decoration-2 underline-offset-4">
+        <strong key={index} className="font-bold text-white">
           {part}
         </strong>
       );
@@ -74,7 +74,7 @@ function highlightKeywordsDark(text: string, keywords: string[]) {
     const isKeyword = uniquePhrases.some((p) => p.toLowerCase() === part.toLowerCase());
     if (isKeyword) {
       return (
-        <strong key={index} className="font-bold text-slate-900 bg-rose-50 px-1 py-0.5 rounded border border-rose-100">
+        <strong key={index} className="font-bold text-on-surface">
           {part}
         </strong>
       );
@@ -232,19 +232,18 @@ export default function ServicePage({ params }: ServicePageProps) {
                   {highlightKeywords(`${service.tagline} ${service.description}`, service.keywords)}
                 </p>
 
-                {/* Target Commercial SEO Keywords Badges (Bold & High Visibility) */}
+                {/* Target Commercial SEO Keywords Badges (Only Bold, Clean Style) */}
                 <div className="mb-8 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 max-w-2xl w-full">
                   <div className="flex items-center gap-2 mb-2.5 text-slate-200 font-label-md text-xs uppercase tracking-wider font-bold">
-                    <span className="material-symbols-outlined text-[16px] text-[#4ecdc4]">key</span>
+                    <span className="material-symbols-outlined text-[16px] text-white">key</span>
                     <span>Core Target Commercial Keywords:</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {service.keywords.map((kw, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 rounded-full bg-slate-900/90 text-white border border-white/25 text-xs sm:text-[13px] font-bold shadow-sm flex items-center gap-1.5"
+                        className="px-3.5 py-1.5 rounded-full bg-slate-900/80 text-white border border-white/20 text-xs sm:text-[13px] font-bold shadow-sm"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#f87b7b]"></span>
                         <strong>{kw}</strong>
                       </span>
                     ))}
@@ -355,6 +354,12 @@ export default function ServicePage({ params }: ServicePageProps) {
                 Overview
               </a>
               <a
+                href="#benefits"
+                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+              >
+                Benefits
+              </a>
+              <a
                 href="#highlights"
                 className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
               >
@@ -397,6 +402,32 @@ export default function ServicePage({ params }: ServicePageProps) {
                   {highlightKeywordsDark(para, service.keywords)}
                 </p>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION: BENEFITS & FEATURES (H2 Keyword-Focused) */}
+        <section className="w-full py-16 bg-[#fff5f5] border-t border-[#f87b7b]/15" id="benefits">
+          <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+            <div className="max-w-4xl mx-auto">
+              <span className="font-label-eyebrow text-label-eyebrow text-[#e11d48] uppercase tracking-widest font-bold">
+                Proven Benefits &amp; Features
+              </span>
+              <h2 className="font-headline-xl text-2xl sm:text-4xl text-on-surface font-extrabold tracking-tight mt-1 mb-6">
+                {service.h2Heading}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {service.bulletPoints && service.bulletPoints.map((point, idx) => (
+                  <div key={idx} className="flex items-start gap-3.5 p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm">
+                    <span className="material-symbols-outlined text-[22px] text-primary shrink-0 mt-0.5" aria-hidden="true">
+                      check_circle
+                    </span>
+                    <p className="font-body-md text-on-surface text-[15px] leading-relaxed">
+                      {highlightKeywordsDark(point, service.keywords)}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
