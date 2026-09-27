@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
   return (
     <aside
       aria-label="Direct Chat Support"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3 group"
     >
       {/* Expanded Pill / Tooltip */}
       <a
@@ -31,7 +31,7 @@ export default function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp +1 416-873-5556"
-        className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30"
+        className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30"
       >
         {/* Subtle pulsing background ring */}
         <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-30 animate-ping -z-10" />

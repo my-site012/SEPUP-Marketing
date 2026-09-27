@@ -256,10 +256,10 @@ export default function ServicePage({ params }: ServicePageProps) {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-wrap items-center gap-4 mb-6">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto mb-6">
                   <a
                     href="#service-inquiry"
-                    className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all duration-200 font-bold"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all duration-200 font-bold text-center"
                   >
                     <span>Request Custom Proposal</span>
                     <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
@@ -269,7 +269,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                     href={BRAND.whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all font-bold"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all font-bold text-center"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               {/* Right Column: Dedicated Visual Showcase Card (Large High-Res Image) */}
               <div className="lg:col-span-5 w-full mt-4 lg:mt-0">
                 <div className="relative group">
-                  <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border-2 border-white/25 shadow-2xl shadow-rose-950/60 bg-slate-900">
+                  <div className="relative w-full aspect-[16/10] sm:aspect-[4/3] rounded-3xl overflow-hidden border-2 border-white/25 shadow-2xl shadow-rose-950/60 bg-slate-900">
                     <Image
                       src={service.heroImage}
                       alt={service.title}
@@ -298,7 +298,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
 
                     {/* Floating Info Pill on Card */}
-                    <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-white/20 flex items-center justify-between text-white shadow-lg">
+                    <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-3 sm:p-3.5 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-white/20 flex items-center justify-between text-white shadow-lg">
                       <div className="flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-[#22c55e] animate-pulse" />
                         <span className="font-label-md text-xs font-bold uppercase tracking-wider">{service.shortTitle}</span>
@@ -316,44 +316,44 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
             </div>
 
-            {/* In-Page Quick Navigation Tabs */}
-            <div className="flex flex-wrap items-center gap-2 pt-6 mt-6 border-t border-white/15">
-              <span className="font-label-md text-[12px] uppercase tracking-wider text-slate-400 mr-2">
+            {/* In-Page Quick Navigation Tabs with touch-friendly horizontal swipe */}
+            <div className="flex items-center gap-2 pt-6 mt-6 border-t border-white/15 overflow-x-auto no-scrollbar py-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+              <span className="font-label-md text-[12px] uppercase tracking-wider text-slate-400 mr-1 shrink-0">
                 Quick Jump:
               </span>
               <a
                 href="#overview"
-                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 Overview
               </a>
               <a
                 href="#benefits"
-                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 Benefits
               </a>
               <a
                 href="#highlights"
-                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 Highlights
               </a>
               <a
                 href="#deliverables"
-                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 Deliverables
               </a>
               <a
                 href="#faqs"
-                className="px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 FAQs
               </a>
               <a
                 href="#service-inquiry"
-                className="px-4 py-1.5 rounded-xl bg-[#f87b7b] hover:bg-[#f43f5e] text-white font-label-md text-[13px] font-medium transition-colors"
+                className="shrink-0 px-3.5 sm:px-4 py-1.5 rounded-xl bg-[#f87b7b] hover:bg-[#f43f5e] text-white font-label-md text-xs sm:text-[13px] font-medium transition-colors"
               >
                 Book Call
               </a>

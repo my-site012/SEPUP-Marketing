@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_ITEMS, BRAND } from "@/lib/constants";
 
@@ -46,10 +47,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-surface shadow-2xl p-6 flex flex-col justify-between z-10 animate-in slide-in-from-right duration-200">
         <div>
           {/* Header */}
-          <div className="flex items-center justify-between pb-6 border-b border-[#f87b7b]/15">
-            <span className="font-headline-sm text-headline-sm font-extrabold text-on-surface">
-              Step Up <span className="text-[#f87b7b]">Marketing</span>
-            </span>
+          <div className="flex items-center justify-between pb-5 border-b border-[#f87b7b]/15">
+            <Link href="/" onClick={onClose} className="relative h-11 w-32 shrink-0">
+              <Image
+                src={BRAND.headerLogo}
+                alt="Step Up Marketing Logo"
+                fill
+                sizes="128px"
+                className="object-contain object-left"
+              />
+            </Link>
             <button
               onClick={onClose}
               className="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"

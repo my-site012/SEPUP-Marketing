@@ -65,7 +65,7 @@ export default function ContactForm({
   };
 
   return (
-    <div className="p-8 sm:p-10 rounded-3xl bg-surface-container-lowest border border-[#f87b7b]/20 shadow-xl">
+    <div className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-surface-container-lowest border border-[#f87b7b]/20 shadow-xl">
       <div className="mb-6">
         <h3 className="font-headline-lg text-headline-lg text-on-surface font-bold">
           {formTitle}
