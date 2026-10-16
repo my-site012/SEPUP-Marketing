@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
   return (
     <aside
       aria-label="Direct Chat Support"
-      className="fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3 group"
+      className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-3 group"
     >
       {/* Expanded Pill / Tooltip */}
       <a

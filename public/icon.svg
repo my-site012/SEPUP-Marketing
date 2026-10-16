@@ -1,11 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f87b7b" />
       <stop offset="50%" stop-color="#fb7185" />
-      <stop offset="100%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="bar1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fecdd3" />
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="url(#grad)" />
-  <path d="M9 22L16 9L23 22H18L16 16L14 22H9Z" fill="#ffffff" />
+
+  <!-- Squircle Base -->
+  <rect width="64" height="64" rx="16" fill="url(#stepGrad)" />
+  
+  <!-- Subtle top-edge highlight -->
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" />
+
+  <!-- Ascending Step Up 3-Bar Motif -->
+  <!-- Step 1 (Left) -->
+  <rect x="13" y="36" width="9" height="16" rx="3.5" fill="rgba(255,255,255,0.75)" />
+
+  <!-- Step 2 (Middle) -->
+  <rect x="26" y="25" width="9" height="27" rx="3.5" fill="rgba(255,255,255,0.9)" />
+
+  <!-- Step 3 (Right) -->
+  <rect x="39" y="14" width="9" height="38" rx="3.5" fill="#ffffff" />
+
+  <!-- Dynamic Upward Growth Arrow -->
+  <path 
+    d="M48 11.5L52 20.5L46.5 19L33 32.5L27.5 27L41 13.5L39.5 8L48 11.5Z" 
+    fill="#ffffff" 
+    opacity="0.95"
+  />
 </svg>

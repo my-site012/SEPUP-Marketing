@@ -18,10 +18,21 @@ export default function IndustriesGrid() {
           </p>
         </div>
 
-        {/* 4-Column Visual Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Mobile App Swipe Indicator */}
+        <div className="flex sm:hidden items-center justify-between text-xs text-slate-500 font-medium mb-3">
+          <span className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-primary" />
+            Swipe sectors
+          </span>
+          <span className="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+        </div>
+
+        {/* 4-Column Visual Cards / Mobile Touch Swiper */}
+        <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pb-3 sm:pb-0 snap-x snap-mandatory no-scrollbar -mx-margin-mobile px-margin-mobile sm:mx-0 sm:px-0">
           {INDUSTRIES.map((industry) => (
-            <IndustryCard key={industry.id} industry={industry} />
+            <div key={industry.id} className="min-w-[80vw] sm:min-w-0 snap-center shrink-0">
+              <IndustryCard industry={industry} />
+            </div>
           ))}
         </div>
 

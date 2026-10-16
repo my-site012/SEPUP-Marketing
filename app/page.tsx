@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="w-full pt-20 bg-surface">
+      <main className="w-full pt-20 pb-20 md:pb-0 bg-surface">
         <div className="flex flex-col w-full">
           {/* SECTION 1: HERO SECTION */}
           <Hero />

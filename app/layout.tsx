@@ -41,6 +41,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg", type: "image/svg+xml" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -51,10 +59,10 @@ export const metadata: Metadata = {
     siteName: siteMetadata.brandName,
     images: [
       {
-        url: "https://lh3.googleusercontent.com/aida/AEtjO1WZUyDCDm5z35boHaN70aKIVV9EjdbU5xEG5H1P45y9Av-QgrKO2SqtFouf4nhOnC8B0rS58D0Zohhi6dvFYo3UHZmKH7OAT8BPG9VyjoLdnelOfHQzWEmfR_0PYynu5l6HdKdorXGUL6UV2Ptd8WBv9csFuFlI_aJNtd1mtPcx0c7ElknyKoIIwkUupU9YEVik_YjfmSISG6PHgH74ZH1TC2gMovyULaTibVZBUUBJ7FlY7xpVB50GLck",
+        url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=85&w=1200&auto=format&fit=crop",
         width: 1200,
         height: 630,
-        alt: "Step Up Marketing - Digital Growth Engine",
+        alt: "Step Up Marketing - Digital Growth Partner",
       },
     ],
   },
@@ -64,7 +72,7 @@ export const metadata: Metadata = {
     description:
       "Turn your digital presence into compounding business growth. High-speed engineering, AI SEO, and revenue pipelines.",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1WZUyDCDm5z35boHaN70aKIVV9EjdbU5xEG5H1P45y9Av-QgrKO2SqtFouf4nhOnC8B0rS58D0Zohhi6dvFYo3UHZmKH7OAT8BPG9VyjoLdnelOfHQzWEmfR_0PYynu5l6HdKdorXGUL6UV2Ptd8WBv9csFuFlI_aJNtd1mtPcx0c7ElknyKoIIwkUupU9YEVik_YjfmSISG6PHgH74ZH1TC2gMovyULaTibVZBUUBJ7FlY7xpVB50GLck",
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=85&w=1200&auto=format&fit=crop",
     ],
   },
   robots: {
@@ -81,6 +89,7 @@ export const metadata: Metadata = {
 };
 
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileAppNav from "@/components/MobileAppNav";
 
 export default function RootLayout({
   children,
@@ -96,6 +105,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.svg" />
         <link rel="preload" href="/logo.png" as="image" type="image/png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
@@ -109,6 +120,7 @@ export default function RootLayout({
       <body className="bg-surface font-sans font-body-md text-on-surface antialiased selection:bg-[#ffe4e6] selection:text-[#e11d48]">
         {children}
         <WhatsAppButton />
+        <MobileAppNav />
       </body>
     </html>
   );

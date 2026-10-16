@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87b7b" />
+      <stop offset="50%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid App Icon Base -->
+  <rect width="180" height="180" rx="40" fill="url(#appleGrad)" />
+  
+  <!-- Subtle highlight border -->
+  <rect x="2" y="2" width="176" height="176" rx="38" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+
+  <!-- Ascending Step Up 3-Bar Motif -->
+  <rect x="36" y="100" width="26" height="46" rx="10" fill="rgba(255,255,255,0.75)" />
+  <rect x="74" y="70" width="26" height="76" rx="10" fill="rgba(255,255,255,0.9)" />
+  <rect x="112" y="38" width="26" height="108" rx="10" fill="#ffffff" />
+
+  <!-- Upward Growth Arrow -->
+  <path 
+    d="M138 32L149 57L134 53L96 91L81 76L119 38L114 23L138 32Z" 
+    fill="#ffffff" 
+  />
+</svg>

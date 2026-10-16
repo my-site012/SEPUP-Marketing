@@ -46,8 +46,18 @@ export default function Header() {
           </nav>
 
           {/* Right Action Cluster */}
-          <div className="flex items-center gap-space-sm shrink-0">
-            {/* CTA Button */}
+          <div className="flex items-center gap-2 sm:gap-space-sm shrink-0">
+            {/* Quick Call Action for Mobile App feel */}
+            <a
+              href={`tel:${BRAND.phoneTel}`}
+              className="sm:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-rose-50 text-primary border border-rose-200/70 text-xs font-bold active:scale-95 transition-transform shadow-xs"
+              aria-label="Call Step Up Marketing"
+            >
+              <span className="material-symbols-outlined text-[16px]">call</span>
+              <span>Call</span>
+            </a>
+
+            {/* Desktop CTA Button */}
             <a
               href="#contact"
               className="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg px-6 py-2.5 shadow-md hover:shadow-lg transition-all font-bold"

@@ -28,7 +28,7 @@ export default function PortfolioGrid() {
         </div>
 
         {/* Editorial Case Studies Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {PORTFOLIO_ITEMS.map((item) => (
             <PortfolioCard key={item.id} item={item} />
           ))}

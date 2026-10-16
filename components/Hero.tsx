@@ -77,77 +77,88 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Visual Stage with Floating Glass Cards */}
-          <div className="lg:col-span-5 relative mt-8 lg:mt-0">
-            <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-surface-container-lowest">
-              <Image
-                src="https://lh3.googleusercontent.com/aida/AEtjO1WZUyDCDm5z35boHaN70aKIVV9EjdbU5xEG5H1P45y9Av-QgrKO2SqtFouf4nhOnC8B0rS58D0Zohhi6dvFYo3UHZmKH7OAT8BPG9VyjoLdnelOfHQzWEmfR_0PYynu5l6HdKdorXGUL6UV2Ptd8WBv9csFuFlI_aJNtd1mtPcx0c7ElknyKoIIwkUupU9YEVik_YjfmSISG6PHgH74ZH1TC2gMovyULaTibVZBUUBJ7FlY7xpVB50GLck"
-                alt="Two modern technology leaders analyzing analytical charts and architecture blueprints inside a glass oceanfront boardroom with floor to ceiling windows over coastal cliffs"
-                fill
-                sizes="(max-width: 1024px) 100vw, 500px"
-                className="w-full h-full object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent pointer-events-none" />
+          {/* Right Column: Sleek Executive Growth Command Station */}
+          <div className="lg:col-span-5 relative mt-6 lg:mt-0">
+            {/* Ambient Background Glow */}
+            <div className="absolute -inset-2 bg-gradient-to-tr from-rose-200/40 via-amber-100/30 to-teal-100/40 rounded-[2.5rem] blur-2xl -z-10" />
 
-              {/* Overlaid Top Meta on Background - Clear of bottom floating card */}
-              <div className="absolute top-4 sm:top-5 left-4 sm:left-5 right-4 sm:right-5 text-on-primary flex items-center justify-between z-10 pointer-events-none">
-                <div className="bg-slate-950/75 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 shadow-sm max-w-[70%] sm:max-w-none">
-                  <p className="font-label-eyebrow text-[10px] sm:text-[11px] uppercase tracking-wider text-[#fda4af] font-semibold truncate flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#f87b7b] shrink-0" />
-                    Step Up Execution Snapshot • Q3 Global Omnichannel
-                  </p>
+            {/* Main Stage Frame */}
+            <div className="rounded-3xl border border-slate-200/80 bg-white/95 backdrop-blur-xl shadow-2xl overflow-hidden">
+              {/* Studio Window Header */}
+              <div className="px-4 py-3 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#f87171]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#fbbf24]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#34d399]" />
+                  <span className="ml-2 font-mono text-[11px] text-slate-400 hidden sm:inline">
+                    stepupmarketing.ca • analytics
+                  </span>
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-slate-950/75 backdrop-blur-md text-on-primary font-label-md text-[10px] sm:text-[11px] border border-white/15 font-semibold shrink-0">
-                  99.8% SLA
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-[11px] font-semibold text-emerald-300">
+                    Active Telemetry
+                  </span>
+                </div>
               </div>
-            </div>
 
-            {/* Floating Glass Card 1 (Top Left Overlap - responsive bounds) */}
-            <div
-              className="absolute -top-3 left-1 sm:-top-5 sm:-left-8 bg-surface-container-lowest/95 backdrop-blur-xl p-2.5 sm:p-4 rounded-2xl shadow-xl flex items-center gap-2 sm:gap-3.5 max-w-[190px] sm:max-w-[260px] border border-[#f87b7b]/20 z-20"
-            >
-              <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-xl bg-[#ffe4e6] flex items-center justify-center text-[#e11d48] shrink-0">
-                <span className="material-symbols-outlined text-[16px] sm:text-[22px]" aria-hidden="true">
-                  trending_up
-                </span>
-              </div>
-              <div>
-                <p className="font-label-md text-[11px] sm:text-label-md text-on-surface font-bold leading-tight">
-                  +240% Organic Lift
-                </p>
-                <p className="font-body-sm text-[10px] sm:text-[12px] text-on-surface-variant">
-                  Top-tier search authority
-                </p>
-              </div>
-            </div>
+              {/* High-Resolution Visual Stage */}
+              <div className="relative w-full aspect-[4/3] bg-slate-100 overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=85&w=1600&auto=format&fit=crop"
+                  alt="Senior digital growth strategist analyzing live omnichannel campaign analytics"
+                  fill
+                  quality={90}
+                  sizes="(max-width: 1024px) 100vw, 650px"
+                  className="w-full h-full object-cover"
+                  priority
+                />
 
-            {/* Floating Glass Card 2 (Bottom Right Overlap - clean, non-overlapping) */}
-            <div className="absolute -bottom-4 right-1 sm:-bottom-6 sm:-right-6 bg-surface-container-lowest/95 backdrop-blur-xl p-2.5 sm:p-4 rounded-2xl shadow-xl flex items-center gap-2 sm:gap-3.5 max-w-[200px] sm:max-w-[270px] border border-[#4ecdc4]/30 z-20">
-              <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-xl bg-[#ccfbf1] flex items-center justify-center text-[#0d9488] shrink-0">
-                <span className="material-symbols-outlined text-[16px] sm:text-[22px]" aria-hidden="true">
-                  smart_toy
-                </span>
-              </div>
-              <div>
-                <p className="font-label-md text-[11px] sm:text-label-md text-on-surface font-bold leading-tight">
-                  Ranked #1 in GEO
-                </p>
-                <p className="font-body-sm text-[10px] sm:text-[12px] text-on-surface-variant">
-                  SearchGPT &amp; Perplexity citations
-                </p>
-              </div>
-            </div>
+                {/* Subtle gradient scrim */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent pointer-events-none" />
 
-            {/* Floating Pill 3 (Top Right Corner - hidden on small phones) */}
-            <div className="hidden sm:flex absolute top-10 -right-4 bg-gradient-to-r from-[#f87b7b] to-[#f43f5e] text-on-primary px-3.5 py-1.5 rounded-full shadow-lg items-center gap-2 z-20">
-              <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-                bolt
-              </span>
-              <span className="font-label-md text-[12px] font-bold">
-                3.8x Pipeline Velocity
-              </span>
+                {/* Top-Left In-Frame Metric Pill */}
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md shadow-md border border-white/40">
+                  <span className="w-2 h-2 rounded-full bg-[#e11d48] animate-ping" />
+                  <span className="text-[11px] font-bold text-slate-900">
+                    +240% Organic Inbound
+                  </span>
+                </div>
+
+                {/* Top-Right Badge */}
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-medium border border-white/10">
+                  <span className="material-symbols-outlined text-[14px] text-amber-400">
+                    verified
+                  </span>
+                  <span>Top 1% Authority</span>
+                </div>
+
+                {/* Bottom Integrated Live Metrics Bar */}
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-3 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/60 shadow-xl flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-[#4ecdc4] to-[#0d9488] text-white flex items-center justify-center shrink-0 shadow-sm">
+                      <span className="material-symbols-outlined text-[20px]">
+                        smart_toy
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-tight">
+                        Ranked #1 in GEO
+                      </p>
+                      <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
+                        SearchGPT &amp; Perplexity Citations
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="shrink-0 text-right">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-gradient-to-r from-[#f87b7b] to-[#f43f5e] text-white text-[11px] font-bold shadow-xs">
+                      <span className="material-symbols-outlined text-[13px]">bolt</span>
+                      3.8x Speed
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

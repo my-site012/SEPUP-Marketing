@@ -11,9 +11,10 @@ export default function AboutSection() {
           <div className="lg:col-span-6 flex flex-col gap-4">
             <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[16/10] bg-[#fff1f2]">
               <Image
-                src="https://lh3.googleusercontent.com/aida/AEtjO1Vnnmg69-2ESZN_vyRZ1kxFDfXZqS-F_IxGA_ADElbe7m0d-CtpLQT5JJfRCbRJr55a8tu7TTUn4SZEDsXxNVAMDgCUNFh75QzejTHF5h6IZ7752kYVjh8r7Fa9lTFGl5r_2N1Vo3FP8vb4lDITuiZpOomFepVHDK-kcZF-5unxB9CuYBCJfs_kOSfzWyyj_sRiMyERanmD5L77tVZ3A3Pz8kljApbMcLobLZh22RC8zO7L7KmVRH8ti_Q"
-                alt="Multicultural international leadership advisory team having an executive strategy meeting inside a sleek high floor corporate boardroom overlooking an illuminated modern skyline during dusk"
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=85&w=1600&auto=format&fit=crop"
+                alt="Executive leadership and advisory directors collaborating in a contemporary glass boardroom"
                 fill
+                quality={90}
                 sizes="(max-width: 1024px) 100vw, 650px"
                 className="w-full h-full object-cover"
               />
