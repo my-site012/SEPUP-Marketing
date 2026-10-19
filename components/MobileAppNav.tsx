@@ -12,11 +12,11 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { id: "hero", label: "Home", icon: "home", href: "#top" },
-  { id: "services", label: "Services", icon: "scatter_plot", href: "#services" },
-  { id: "portfolio", label: "Work", icon: "cases", href: "#portfolio" },
-  { id: "industries", label: "Sectors", icon: "domain", href: "#industries" },
-  { id: "contact", label: "Consult", icon: "chat_bubble", href: "#contact" },
+  { id: "hero", label: "Home", icon: "home", href: "/" },
+  { id: "services", label: "Services", icon: "scatter_plot", href: "/services" },
+  { id: "about", label: "About", icon: "person", href: "/about" },
+  { id: "industries", label: "Sectors", icon: "domain", href: "/#industries" },
+  { id: "contact", label: "Contact", icon: "chat_bubble", href: "/contact" },
 ];
 
 export default function MobileAppNav() {

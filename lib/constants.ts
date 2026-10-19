@@ -7,11 +7,11 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "About Us", href: "/about" },
   { label: "Our Framework", href: "/#framework" },
   { label: "Industries", href: "/#industries" },
-  { label: "About Us", href: "/#about" },
   { label: "Why Us", href: "/#why-us" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const BRAND = {
@@ -718,12 +718,12 @@ export const SERVICE_AREAS = [
 
 export const FOOTER_SECTIONS = {
   company: [
-    { label: "About Us", href: "/#about" },
-    { label: "Founder Profile", href: "/#founder" },
+    { label: "About Us", href: "/about" },
+    { label: "Founder Profile", href: "/about#founder" },
     { label: "Why Partner With Us", href: "/#why-us" },
     { label: "Our Framework", href: "/#framework" },
-    { label: "Service Areas", href: "/#contact" },
-    { label: "Contact Us", href: "/#contact" },
+    { label: "Service Areas", href: "/contact#service-areas" },
+    { label: "Contact Us", href: "/contact" },
   ],
   services: [
     { label: "Branding & Identity", href: "/services/branding-identity" },

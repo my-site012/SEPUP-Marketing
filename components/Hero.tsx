@@ -44,7 +44,7 @@ export default function Hero() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-space-sm pt-space-xs w-full sm:w-auto">
               <Link
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 group font-bold text-center"
               >
                 <span>Book a Free Strategy Call</span>
@@ -53,7 +53,7 @@ export default function Hero() {
                 </span>
               </Link>
               <Link
-                href="#services"
+                href="/services"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-surface-container-lowest hover:bg-[#fff1f2] border border-[#f87b7b]/20 text-on-surface font-label-lg text-label-lg shadow-sm hover:shadow-md transition-all duration-200 font-semibold text-center"
               >
                 <span>Explore Our 11 Services</span>

@@ -32,7 +32,7 @@ export default function CTASection() {
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-3 px-8 py-3.5 sm:py-4 rounded-full bg-white text-[#e11d48] hover:bg-slate-50 font-label-lg text-sm shadow-lg hover:shadow-xl font-bold transition-all duration-200"
               >
                 <span>Book a Free Strategy Consultation</span>

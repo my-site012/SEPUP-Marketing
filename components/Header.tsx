@@ -58,12 +58,12 @@ export default function Header() {
             </a>
 
             {/* Desktop CTA Button */}
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg px-6 py-2.5 shadow-md hover:shadow-lg transition-all font-bold"
             >
               Get Free Consultation
-            </a>
+            </Link>
 
             {/* Hamburger Button for Mobile/Tablet */}
             <button
