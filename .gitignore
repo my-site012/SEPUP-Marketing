@@ -31,5 +31,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-.vercel
-.env*.local
+# documents
+*.docx

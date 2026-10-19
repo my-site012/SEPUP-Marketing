@@ -1,9 +1,9 @@
 import { BRAND } from "./constants";
 
 export const siteMetadata = {
-  title: "Step Up Marketing | Digital Growth & AI SEO Partner",
+  title: "Step Up Marketing | Supporting Businesses Ready to Scale With Marketing",
   description:
-    "We build high-performing websites, generative search strategies (AI SEO & GEO), and automated acquisition pipelines designed to capture demand and scale enterprise revenue.",
+    "Step Up Marketing is a boutique digital marketing agency in Mississauga & GTA supporting growing businesses with practical marketing strategies, creative solutions, and hands-on execution.",
   siteUrl: "https://www.stepupmarketing.ca",
   brandName: BRAND.name,
 };
@@ -19,20 +19,22 @@ export function generateStructuredData() {
         url: siteMetadata.siteUrl,
         logo: {
           "@type": "ImageObject",
-          url: BRAND.headerLogo,
+          url: `${siteMetadata.siteUrl}${BRAND.headerLogo}`,
         },
         contactPoint: [
           {
             "@type": "ContactPoint",
             telephone: BRAND.phoneTel,
             contactType: "customer service",
-            availableLanguage: ["English", "Hindi"],
+            availableLanguage: ["English"],
           },
         ],
         sameAs: [
-          "https://linkedin.com",
-          "https://twitter.com",
-          "https://github.com",
+          BRAND.socialLinks.instagram,
+          BRAND.socialLinks.facebook,
+          BRAND.socialLinks.linkedin,
+          BRAND.socialLinks.googleBusiness,
+          BRAND.socialLinks.founderLinkedin,
         ],
       },
       {
@@ -48,12 +50,12 @@ export function generateStructuredData() {
         "@type": "ProfessionalService",
         "@id": `${siteMetadata.siteUrl}/#service`,
         name: BRAND.name,
-        image: BRAND.headerLogo,
+        image: `${siteMetadata.siteUrl}${BRAND.headerLogo}`,
         telephone: BRAND.phoneTel,
-        priceRange: "$$$$",
+        priceRange: "$$",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "3504 Hurontario St #3008",
+          streetAddress: "3504 Hurontario Street",
           addressLocality: "Mississauga",
           addressRegion: "Ontario",
           postalCode: "L5B 0B9",

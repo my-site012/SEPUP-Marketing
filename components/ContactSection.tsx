@@ -1,5 +1,5 @@
 import React from "react";
-import { BRAND, GLOBAL_HUBS } from "@/lib/constants";
+import { BRAND, SERVICE_AREAS } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 
 export default function ContactSection() {
@@ -7,25 +7,25 @@ export default function ContactSection() {
     <section className="w-full py-space-2xl bg-[#fff5f5]" id="contact">
       <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
-          {/* Left Column: Contact Information & Global Hubs */}
+          {/* Left Column: Contact Information & Canadian Hub */}
           <div className="lg:col-span-5 flex flex-col gap-space-sm">
             <div>
-              <span className="font-label-eyebrow text-label-eyebrow text-[#e11d48] uppercase tracking-widest font-bold">
-                Initiate Engagement
-              </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-surface tracking-tight leading-snug mt-1">
-                Let&apos;s Talk About Your Growth.
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#ffe4e6] text-[#e11d48] font-label-eyebrow text-xs uppercase font-bold tracking-widest mb-2">
+                Get In Touch
+              </div>
+              <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold text-on-surface tracking-tight leading-snug">
+                Let&apos;s Talk About Your Business.
               </h2>
               <p className="font-body-lead text-body-lead text-on-surface-variant mt-2">
-                Share your objectives. We will prepare an executive summary of growth opportunities prior to our initial conversation.
+                Whether you need a full marketing strategy, a new website, or ongoing hands-on management, we&apos;re here to help you scale with confidence.
               </p>
             </div>
 
             {/* Direct Contacts */}
-            <div className="flex flex-col gap-3.5 pt-2">
+            <div className="flex flex-col gap-3 pt-1">
               {/* Phone Line */}
               <a
-                className="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-[#f87b7b]/15 shadow-sm hover:shadow-md transition-all group"
+                className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#f87b7b]/15 shadow-sm hover:shadow-md transition-all group"
                 href={`tel:${BRAND.phoneTel}`}
               >
                 <div className="w-12 h-12 rounded-xl bg-[#ffe4e6] text-[#e11d48] flex items-center justify-center shrink-0">
@@ -35,7 +35,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-label-eyebrow text-[11px] text-on-surface-variant uppercase font-semibold">
-                    Direct Phone Line
+                    Direct Phone Line (Canada)
                   </p>
                   <p className="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-[#e11d48] transition-colors">
                     {BRAND.phoneDisplay}
@@ -45,7 +45,7 @@ export default function ContactSection() {
 
               {/* WhatsApp Direct Line */}
               <a
-                className="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-[#25D366]/30 shadow-sm hover:shadow-md transition-all group"
+                className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#25D366]/30 shadow-sm hover:shadow-md transition-all group"
                 href={BRAND.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,17 +62,17 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-label-eyebrow text-[11px] text-on-surface-variant uppercase font-semibold">
-                    WhatsApp Chat Support
+                    WhatsApp Chat
                   </p>
                   <p className="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-[#16a34a] transition-colors">
-                    {BRAND.phoneDisplay} (Instant Reply)
+                    {BRAND.phoneDisplay} (Quick Response)
                   </p>
                 </div>
               </a>
 
               {/* Email Line */}
               <a
-                className="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-[#4ecdc4]/20 shadow-sm hover:shadow-md transition-all group"
+                className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-[#4ecdc4]/20 shadow-sm hover:shadow-md transition-all group"
                 href={`mailto:${BRAND.email}`}
               >
                 <div className="w-12 h-12 rounded-xl bg-[#ccfbf1] text-[#0d9488] flex items-center justify-center shrink-0">
@@ -82,7 +82,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-label-eyebrow text-[11px] text-on-surface-variant uppercase font-semibold">
-                    Advisory Inquiries
+                    Official Email
                   </p>
                   <p className="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-[#0d9488] transition-colors">
                     {BRAND.email}
@@ -91,18 +91,22 @@ export default function ContactSection() {
               </a>
 
               {/* Physical Office Address */}
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-slate-100 text-on-surface flex items-center justify-center shrink-0 mt-0.5">
                   <span className="material-symbols-outlined text-[22px] text-primary" aria-hidden="true">
-                    apartment
+                    location_city
                   </span>
                 </div>
                 <div>
                   <p className="font-label-eyebrow text-[11px] text-on-surface-variant uppercase font-semibold">
-                    Headquarters Address
+                    Business Address
                   </p>
                   <p className="font-body-md text-[14px] text-on-surface font-medium leading-relaxed">
                     {BRAND.address}
+                  </p>
+                  <p className="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-[15px] text-slate-400">schedule</span>
+                    <span>Business Hours: {BRAND.hours}</span>
                   </p>
                 </div>
               </div>
@@ -118,16 +122,16 @@ export default function ContactSection() {
                     href={BRAND.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-[#e11d48] hover:bg-[#ffe4e6] transition-colors shadow-sm"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-[#e11d48] hover:bg-[#ffe4e6] transition-colors shadow-2xs"
                   >
                     <span>View on Google Maps</span>
                     <span className="material-symbols-outlined text-[14px]">open_in_new</span>
                   </a>
                 </div>
-                <div className="relative w-full h-[220px]">
+                <div className="relative w-full h-[200px]">
                   <iframe
-                    title="Step Up Marketing Office Location"
-                    src="https://maps.google.com/maps?q=3504+Hurontario+St+%233008,+Mississauga,+ON+L5B+0B9,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Step Up Marketing Office Location Mississauga"
+                    src="https://maps.google.com/maps?q=3504+Hurontario+St,+Mississauga,+ON+L5B+0B9,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -140,40 +144,21 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Global Hubs Summary */}
-            <div className="p-6 rounded-2xl bg-surface-container-lowest border border-[#f87b7b]/15 shadow-sm">
-              <h3 className="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-3">
-                Global Operations
+            {/* Service Areas Summary */}
+            <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+              <h3 className="font-label-md text-xs text-on-surface font-bold uppercase tracking-wider">
+                Service Areas &amp; Locations
               </h3>
-              <div className="grid grid-cols-2 gap-3 text-on-surface-variant font-body-sm text-[13px]">
-                {GLOBAL_HUBS.map((hub) => (
-                  <div key={hub.region}>
-                    <p className="font-bold text-on-surface">{hub.region}</p>
-                    {hub.locations.map((loc) => (
-                      <p key={loc}>{loc}</p>
-                    ))}
-                  </div>
-                ))}
+              <div className="space-y-2 text-xs text-slate-600">
+                <div>
+                  <p className="font-bold text-slate-900 mb-1">Local Focus (In-Person / On-Site Shoots):</p>
+                  <p>Mississauga, Toronto, Brampton, Oakville, Milton, Vaughan, Markham &amp; the Greater Toronto Area (GTA).</p>
+                </div>
+                <div className="pt-2 border-t border-slate-100">
+                  <p className="font-bold text-slate-900 mb-1">Across Canada (Online &amp; Remote):</p>
+                  <p>Remote strategy, web development, SEO, and paid ad management across Ontario, British Columbia, Alberta, and Canada-wide.</p>
+                </div>
               </div>
-            </div>
-
-            {/* Certifications & Badges */}
-            <div className="flex items-center gap-3 pt-2 flex-wrap">
-              <span className="px-3 py-1.5 rounded-full bg-white border border-[#f87b7b]/20 text-on-surface font-label-md text-[12px] font-medium flex items-center gap-1.5 shadow-sm">
-                <span className="material-symbols-outlined text-[16px] text-[#e11d48]" aria-hidden="true">
-                  verified_user
-                </span>
-                <span>ISO 27001 Certified</span>
-              </span>
-              <span className="px-3 py-1.5 rounded-full bg-white border border-[#4ecdc4]/30 text-on-surface font-label-md text-[12px] font-medium flex items-center gap-1.5 shadow-sm">
-                <span className="material-symbols-outlined text-[16px] text-[#0d9488]" aria-hidden="true">
-                  verified
-                </span>
-                <span>Google Premier Partner</span>
-              </span>
-              <span className="px-3 py-1.5 rounded-full bg-white border border-[#fb923c]/30 text-on-surface font-label-md text-[12px] font-medium shadow-sm">
-                Meta Certified
-              </span>
             </div>
           </div>
 

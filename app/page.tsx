@@ -2,13 +2,14 @@ import React from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
+import MarketingFunnel from "@/components/MarketingFunnel";
 import AboutSection from "@/components/AboutSection";
+import ExtendedTeamBanner from "@/components/ExtendedTeamBanner";
 import ServicesGrid from "@/components/ServicesGrid";
 import IndustriesGrid from "@/components/IndustriesGrid";
 import ProcessSection from "@/components/ProcessSection";
-import PortfolioGrid from "@/components/PortfolioGrid";
-import MetricsSection from "@/components/MetricsSection";
 import WhyUsSection from "@/components/WhyUsSection";
+import PortfolioGrid from "@/components/PortfolioGrid";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
@@ -23,37 +24,40 @@ export default function HomePage() {
           {/* SECTION 1: HERO SECTION */}
           <Hero />
 
-          {/* SECTION 2: TRUST / PROOF STRIP */}
+          {/* SECTION 2: CANADIAN LOCAL PROOF STRIP */}
           <TrustBar />
 
-          {/* SECTION 3: ABOUT / POSITIONING */}
+          {/* SECTION 3: 4-PILLAR CUSTOMER LIFECYCLE (ATTRACT, ENGAGE, CONVERT, RETAIN) */}
+          <MarketingFunnel />
+
+          {/* SECTION 4: ABOUT US & FOUNDER SPOTLIGHT (GARVITA UPPAL) */}
           <AboutSection />
 
-          {/* SECTION 4: CORE SERVICES */}
+          {/* SECTION 5: "YOUR EXTENDED MARKETING TEAM" BANNER */}
+          <ExtendedTeamBanner />
+
+          {/* SECTION 6: 11 CORE SERVICES */}
           <ServicesGrid />
 
-          {/* SECTION 5: SPECIALIZED VERTICALS / INDUSTRIES */}
+          {/* SECTION 7: SPECIALIZED CANADIAN SMB VERTICALS */}
           <IndustriesGrid />
 
-          {/* SECTION 6: ENGINEERED WORKFLOW / PROCESS */}
+          {/* SECTION 8: 4-STEP HONEST PROCESS */}
           <ProcessSection />
 
-          {/* SECTION 7: SELECTED WORK / PORTFOLIO */}
-          <PortfolioGrid />
-
-          {/* SECTION 8: RESULTS & EXECUTIVE METRICS BANNER */}
-          <MetricsSection />
-
-          {/* SECTION 9: WHY BUSINESSES CHOOSE US */}
+          {/* SECTION 9: WHY CLIENTS CHOOSE US (7 USPS) */}
           <WhyUsSection />
 
-          {/* SECTION 10: EXECUTIVE FEEDBACK / TESTIMONIALS */}
+          {/* SECTION 10: PORTFOLIO & WORK SAMPLES (ROUND 2) */}
+          <PortfolioGrid />
+
+          {/* SECTION 11: TESTIMONIALS & REVIEWS (GOOGLE & LINKEDIN) */}
           <Testimonials />
 
-          {/* SECTION 11: CALL TO ACTION (CTA) HERO BANNER */}
+          {/* SECTION 12: CALL TO ACTION BANNER */}
           <CTASection />
 
-          {/* SECTION 12: INITIATE ENGAGEMENT / CONTACT */}
+          {/* SECTION 13: CONTACT & MISSISSAUGA OFFICE LOCATION */}
           <ContactSection />
         </div>
       </main>

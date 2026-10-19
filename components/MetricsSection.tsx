@@ -1,49 +1,34 @@
 import React from "react";
-import { EXECUTIVE_METRICS } from "@/lib/constants";
+import { TRUST_BAR_STATS } from "@/lib/constants";
 
 export default function MetricsSection() {
   return (
-    <section className="w-full py-space-2xl bg-[#1e293b] text-on-primary relative overflow-hidden">
-      {/* Diffused Background Lights */}
-      <div 
-        className="absolute -right-20 -bottom-20 w-96 h-96 bg-[#f87b7b]/20 blur-3xl rounded-full pointer-events-none"
-        aria-hidden="true"
-      />
-      <div 
-        className="absolute -left-20 -top-20 w-80 h-80 bg-[#4ecdc4]/20 blur-3xl rounded-full pointer-events-none"
-        aria-hidden="true"
-      />
-
+    <section className="w-full py-space-2xl bg-slate-900 text-white relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-          {/* Left Summary */}
           <div className="lg:col-span-4 flex flex-col gap-3">
-            <span className="font-label-eyebrow text-label-eyebrow text-[#fecdd3] uppercase tracking-widest font-bold">
-              Verifiable Impact
+            <span className="font-label-eyebrow text-xs uppercase tracking-widest font-bold text-rose-300">
+              Trusted Growth
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-on-primary tracking-tight leading-snug">
-              Compounding Numbers. Zero Speculation.
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-snug">
+              Boutique Care. Proven Expertise.
             </h2>
-            <p className="font-body-md text-body-md text-slate-300">
-              We operate as an extension of your growth committee with quantifiable revenue metrics mapped directly to your balance sheet.
+            <p className="text-sm text-slate-300 leading-relaxed">
+              We operate as your dedicated outsourced marketing team with honest recommendations and transparent execution.
             </p>
           </div>
 
-          {/* 6-Card Grid */}
-          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
-            {EXECUTIVE_METRICS.map((metric) => (
+          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {TRUST_BAR_STATS.map((stat) => (
               <div
-                key={metric.label}
-                className="p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-inner hover:bg-white/10 transition-colors"
+                key={stat.label}
+                className="p-5 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10"
               >
-                <p className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold ${metric.color}`}>
-                  {metric.value}
+                <p className="text-2xl sm:text-3xl font-extrabold text-white">
+                  {stat.value}
                 </p>
-                <p className="font-label-lg text-label-lg font-semibold text-white mt-1">
-                  {metric.label}
-                </p>
-                <p className="font-body-sm text-[12px] text-slate-300 mt-1">
-                  {metric.detail}
+                <p className="text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wider">
+                  {stat.label}
                 </p>
               </div>
             ))}

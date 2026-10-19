@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HERO_TRUST_ITEMS } from "@/lib/constants";
+import { HERO_TRUST_ITEMS, BRAND } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative w-full pt-10 pb-20 lg:pt-16 lg:pb-32 overflow-hidden bg-surface">
+    <section className="relative w-full pt-8 pb-16 lg:pt-14 lg:pb-28 overflow-hidden bg-surface">
       {/* Ambient Radial Glow with Brand Colors */}
       <div 
         className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-[#f87b7b]/25 via-[#4ecdc4]/15 to-transparent blur-3xl pointer-events-none -z-10 rounded-full"
@@ -22,23 +22,23 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#f87b7b] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#f43f5e]" />
               </span>
-              <span className="font-label-eyebrow text-label-eyebrow tracking-widest text-[#e11d48] uppercase">
-                Step Up Marketing • Digital Growth Partner
+              <span className="font-label-eyebrow text-label-eyebrow tracking-widest text-[#e11d48] uppercase font-bold">
+                Boutique Digital Marketing Agency • Mississauga &amp; GTA
               </span>
             </div>
 
             {/* Main Display Headline */}
-            <h1 className="text-[28px] sm:text-4xl lg:text-[46px] font-extrabold text-on-surface tracking-tight leading-[1.15] max-w-2xl">
-              Turn Your Digital Presence Into{" "}
+            <h1 className="text-[28px] sm:text-4xl lg:text-[44px] font-extrabold text-on-surface tracking-tight leading-[1.16] max-w-2xl">
+              Supporting Businesses Ready To Scale With{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f87b7b] via-[#fb923c] to-[#4ecdc4]">
-                Real Business Growth
+                Marketing Strategy &amp; Execution
               </span>
               .
             </h1>
 
             {/* Body Description */}
             <p className="text-sm sm:text-base lg:text-[17px] leading-relaxed text-on-surface-variant max-w-xl">
-              We build high-performing websites, search strategies, AI-powered experiences, and targeted acquisition campaigns designed to capture demand, accelerate qualified pipelines, and scale enterprise revenue.
+              Step Up Marketing is your outsourced marketing department without the full-time overhead. We support small and medium-sized businesses across Mississauga, Toronto, and the GTA with practical strategies, creative solutions, and hands-on execution.
             </p>
 
             {/* Action Buttons */}
@@ -47,7 +47,7 @@ export default function Hero() {
                 href="#contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#f87b7b] via-[#fb7185] to-[#f43f5e] hover:opacity-95 text-on-primary font-label-lg text-label-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 group font-bold text-center"
               >
-                <span>Get a Free Strategy Call</span>
+                <span>Book a Free Strategy Call</span>
                 <span className="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">
                   arrow_forward
                 </span>
@@ -56,7 +56,7 @@ export default function Hero() {
                 href="#services"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-surface-container-lowest hover:bg-[#fff1f2] border border-[#f87b7b]/20 text-on-surface font-label-lg text-label-lg shadow-sm hover:shadow-md transition-all duration-200 font-semibold text-center"
               >
-                <span>Explore Our Services</span>
+                <span>Explore Our 11 Services</span>
               </Link>
             </div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Sleek Executive Growth Command Station */}
+          {/* Right Column: Canadian Boutique Growth Hub Preview */}
           <div className="lg:col-span-5 relative mt-6 lg:mt-0">
             {/* Ambient Background Glow */}
             <div className="absolute -inset-2 bg-gradient-to-tr from-rose-200/40 via-amber-100/30 to-teal-100/40 rounded-[2.5rem] blur-2xl -z-10" />
@@ -91,72 +91,101 @@ export default function Hero() {
                   <span className="w-2.5 h-2.5 rounded-full bg-[#fbbf24]" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#34d399]" />
                   <span className="ml-2 font-mono text-[11px] text-slate-400 hidden sm:inline">
-                    stepupmarketing.ca • analytics
+                    stepupmarketing.ca • mississauga, on
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="text-[11px] font-semibold text-emerald-300">
-                    Active Telemetry
+                    Boutique Marketing Hub
                   </span>
                 </div>
               </div>
 
-              {/* High-Resolution Visual Stage */}
-              <div className="relative w-full aspect-[4/3] bg-slate-100 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=85&w=1600&auto=format&fit=crop"
-                  alt="Senior digital growth strategist analyzing live omnichannel campaign analytics"
-                  fill
-                  quality={90}
-                  sizes="(max-width: 1024px) 100vw, 650px"
-                  className="w-full h-full object-cover"
-                  priority
-                />
-
-                {/* Subtle gradient scrim */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent pointer-events-none" />
-
-                {/* Top-Left In-Frame Metric Pill */}
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md shadow-md border border-white/40">
-                  <span className="w-2 h-2 rounded-full bg-[#e11d48] animate-ping" />
-                  <span className="text-[11px] font-bold text-slate-900">
-                    +240% Organic Inbound
-                  </span>
-                </div>
-
-                {/* Top-Right Badge */}
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-medium border border-white/10">
-                  <span className="material-symbols-outlined text-[14px] text-amber-400">
-                    verified
-                  </span>
-                  <span>Top 1% Authority</span>
-                </div>
-
-                {/* Bottom Integrated Live Metrics Bar */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-3 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/60 shadow-xl flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-[#4ecdc4] to-[#0d9488] text-white flex items-center justify-center shrink-0 shadow-sm">
-                      <span className="material-symbols-outlined text-[20px]">
-                        smart_toy
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-xs sm:text-[13px] font-bold text-slate-900 leading-tight">
-                        Ranked #1 in GEO
-                      </p>
-                      <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
-                        SearchGPT &amp; Perplexity Citations
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="shrink-0 text-right">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-gradient-to-r from-[#f87b7b] to-[#f43f5e] text-white text-[11px] font-bold shadow-xs">
-                      <span className="material-symbols-outlined text-[13px]">bolt</span>
-                      3.8x Speed
+              {/* Stage Body */}
+              <div className="p-5 sm:p-6 space-y-4">
+                {/* Agency Snapshot Card */}
+                <div className="p-4 rounded-2xl bg-gradient-to-br from-rose-50/70 to-teal-50/50 border border-slate-200/60">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                      Your Outsourced Marketing Team
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full bg-white text-[11px] font-bold text-rose-600 border border-rose-100 shadow-2xs">
+                      1 Point of Contact
                     </span>
                   </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Strategy, website management, Google local rankings, social media, content shoots, and advertising coordinated for you.
+                  </p>
+                </div>
+
+                {/* 4 Pillars Quick Grid */}
+                <div className="grid grid-cols-2 gap-2.5">
+                  <div className="p-3 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#f43f5e] mb-1">
+                      <span className="material-symbols-outlined text-[15px]">campaign</span>
+                      <span>ATTRACT</span>
+                    </div>
+                    <p className="text-[11px] text-slate-500 leading-snug">
+                      Branding, Websites, Local SEO &amp; AI Search
+                    </p>
+                  </div>
+                  <div className="p-3 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#0d9488] mb-1">
+                      <span className="material-symbols-outlined text-[15px]">groups</span>
+                      <span>ENGAGE</span>
+                    </div>
+                    <p className="text-[11px] text-slate-500 leading-snug">
+                      Social Media, Reels &amp; Photo/Video Shoots
+                    </p>
+                  </div>
+                  <div className="p-3 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#ea580c] mb-1">
+                      <span className="material-symbols-outlined text-[15px]">ads_click</span>
+                      <span>CONVERT</span>
+                    </div>
+                    <p className="text-[11px] text-slate-500 leading-snug">
+                      Google Search Ads, Meta Ads &amp; Landing Pages
+                    </p>
+                  </div>
+                  <div className="p-3 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#6366f1] mb-1">
+                      <span className="material-symbols-outlined text-[15px]">sync</span>
+                      <span>RETAIN</span>
+                    </div>
+                    <p className="text-[11px] text-slate-500 leading-snug">
+                      Email Marketing, Reviews &amp; Client Loyalty
+                    </p>
+                  </div>
+                </div>
+
+                {/* Founder Assurance Strip */}
+                <div className="p-3.5 rounded-xl bg-slate-900 text-white flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="relative w-9 h-9 rounded-full overflow-hidden border border-rose-300 shrink-0">
+                      <Image
+                        src="/founder.png"
+                        alt="Garvita Uppal, Founder"
+                        fill
+                        className="object-cover object-top"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-white leading-tight">
+                        Garvita Uppal
+                      </p>
+                      <p className="text-[10px] text-slate-300">
+                        Principal Consultant | 10 Yrs Exp.
+                      </p>
+                    </div>
+                  </div>
+                  <Link
+                    href="#contact"
+                    className="text-[11px] font-bold text-[#fda4af] hover:text-white transition-colors flex items-center gap-1"
+                  >
+                    <span>Talk Directly</span>
+                    <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  </Link>
                 </div>
               </div>
             </div>
