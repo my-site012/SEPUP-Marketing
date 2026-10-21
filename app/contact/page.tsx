@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { BRAND, SERVICE_AREAS } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Contact Us | Step Up Marketing - Mississauga & GTA Marketing Agency",
@@ -102,7 +104,9 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="w-full bg-surface">
+    <>
+      <Header />
+      <main className="w-full pt-20 pb-20 md:pb-0 bg-surface">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -473,6 +477,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </main>
+    <Footer />
+  </>
+);
 }

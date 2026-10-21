@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import RealisticFeatureIcon from "@/components/RealisticFeatureIcon";
 import { SERVICES_DATA, ServiceDetail } from "@/lib/servicesData";
 import { BRAND } from "@/lib/constants";
 
@@ -426,13 +427,11 @@ export default function ServicePage({ params }: ServicePageProps) {
               {service.highlights.map((item) => (
                 <div
                   key={item.title}
-                  className="p-8 rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                  className="group p-8 rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-[#ffe4e6] text-[#e11d48] flex items-center justify-center mb-6 shadow-sm">
-                      <span className="material-symbols-outlined text-[28px]" aria-hidden="true">
-                        {item.icon}
-                      </span>
+                    <div className="mb-6">
+                      <RealisticFeatureIcon icon={item.icon} title={item.title} />
                     </div>
                     <h3 className="font-headline-md text-xl font-bold text-on-surface mb-2">
                       {item.title}
