@@ -112,20 +112,6 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Breadcrumb Navigation */}
-      <nav
-        aria-label="Breadcrumb"
-        className="w-full bg-[#fff5f5]/80 border-b border-[#f87b7b]/15 py-3"
-      >
-        <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center gap-2 text-xs text-on-surface-variant">
-          <Link href="/" className="hover:text-primary transition-colors flex items-center gap-1 font-medium">
-            <span className="material-symbols-outlined text-[16px]">home</span>
-            <span>Home</span>
-          </Link>
-          <span className="text-outline">/</span>
-          <span className="text-primary font-bold">Contact Us</span>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="relative w-full pt-12 pb-14 lg:pt-16 lg:pb-20 overflow-hidden bg-gradient-to-b from-[#fff5f5] via-surface to-surface">

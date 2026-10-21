@@ -86,23 +86,6 @@ export default function AboutPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* Breadcrumb Navigation */}
-        <nav
-          aria-label="Breadcrumb"
-          className="w-full bg-[#fff5f5]/80 border-b border-[#f87b7b]/15 py-3"
-        >
-          <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center gap-2 text-xs text-on-surface-variant">
-            <Link
-              href="/"
-              className="hover:text-primary transition-colors flex items-center gap-1 font-medium"
-            >
-              <span className="material-symbols-outlined text-[16px]">home</span>
-              <span>Home</span>
-            </Link>
-            <span className="text-outline">/</span>
-            <span className="text-primary font-bold">About Us</span>
-          </div>
-        </nav>
 
         {/* Hero Section */}
         <section className="relative w-full pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden bg-gradient-to-b from-[#fff5f5] via-surface to-surface">
@@ -168,34 +151,6 @@ export default function AboutPage() {
                   <span>Meet Our Founder</span>
                   <span className="material-symbols-outlined text-[18px]">expand_more</span>
                 </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Company Background & Story */}
-        <section className="w-full py-16 bg-white border-y border-slate-100">
-          <div className="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
-            <div className="max-w-4xl mx-auto space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#ffe4e6] text-[#e11d48] font-bold text-xs uppercase tracking-wider">
-                Company Background
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Our Story & Philosophy
-              </h2>
-              <div className="space-y-4 text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-                <p>
-                  We work with business owners who have already built a functioning business but need professional marketing support to reach more customers, strengthen their online presence, and take their business further.
-                </p>
-                <p>
-                  Our services include marketing strategy, website design and development, search engine optimization (SEO), social media management, paid advertising, branding, lead generation and email marketing.
-                </p>
-                <p>
-                  We understand that running a business comes with enough responsibilities. Marketing shouldn&apos;t have to become another full-time job for the owner. Our goal is to make marketing simpler, more transparent, and more accessible for business owners who want professional support without building an entire in-house marketing department.
-                </p>
-                <p className="p-5 rounded-2xl bg-[#fff5f5] border border-[#f87b7b]/20 text-slate-900 font-medium">
-                  Our approach is simple: understand the business first, identify what it actually needs, and build a marketing strategy around its goals, customers, and budget. Rather than offering one-size-fits-all packages, or recommending every available marketing service, we take the time to understand what each business actually needs. We focus on providing the right combination of services, honest recommendations, and reliable support.
-                </p>
               </div>
             </div>
           </div>
